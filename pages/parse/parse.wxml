@@ -1,0 +1,4 @@
+<!--pages/parse/parse.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+  <x-parse html="{{html}}"></x-parse>
+</x-page-doc>

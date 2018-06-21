@@ -1,0 +1,6 @@
+<!--pages/imageloader/imageloader.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+ <block wx:for="{{list}}" wx:key="{{index}}">
+   <x-image-loader class="image" show-loading="true" src="{{item}}" cache="{{true}}" preview="true" longtapSave="true"></x-image-loader>
+ </block>
+</x-page-doc>

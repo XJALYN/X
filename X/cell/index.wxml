@@ -1,0 +1,15 @@
+<!--XComponents/cell/cell.wxml-->
+<view class="weui-panel" style='{{(!showTopLine||showTopLine=="false")?"border-top-style:none":""}}'>
+  <view class="weui-panel__bd" bindtap='bindPushToNext'>
+    <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+      <image wx:if="{{icon != ''}}" src="{{icon}}" class="weui-cell__icon" />
+
+      <view class="weui-cell__bd weui-cell_primary">
+        <view>{{title}}</view>
+      </view>
+      <view class="weui-cell__ft weui-cell__ft_in-access">{{detail}}
+        <view class="weui-badge weui-badge_dot" wx:if="{{dotNum!=0}}">{{dotNum}}</view>
+      </view>
+    </view>
+  </view>
+</view>

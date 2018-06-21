@@ -1,0 +1,15 @@
+<!--X/countdown/countdown.wxml-->
+
+<view class="countdown">
+
+  <block wx:for="{{timeFlags}}" wx:key="{{index}}">
+  <view wx:if="{{item=='yy'}}" style='{{timeTextStyle}}'>{{year}}</view>
+  <view wx:if="{{item=='mm'}}" style='{{timeTextStyle}}'>{{month}}</view>
+    <view wx:if="{{item=='dd'}}" style='{{timeTextStyle}}'>{{day}}</view>
+    <view wx:if="{{item=='HH'}}" style='{{timeTextStyle}}'>{{hour}}</view>
+    <view wx:if="{{item=='MM'}}" style='{{timeTextStyle}}'>{{minute}}</view>
+    <view wx:if="{{item=='SS'}}" style='{{timeTextStyle}}'>{{second}}</view>
+    <view style='{{dotTextStyle}}'>{{units[index]}}</view>
+  </block>
+</view>
+

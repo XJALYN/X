@@ -1,0 +1,6 @@
+<!--pages/timeline/timeline.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+ <x-timeline range="{{range}}" value="3" range-key="name"></x-timeline>
+
+ <x-timeline range="{{range}}" value="0" range-key="name" vertical="false"></x-timeline>
+</x-page-doc>

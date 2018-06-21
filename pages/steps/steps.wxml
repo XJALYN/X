@@ -1,0 +1,6 @@
+<!--pages/steps/steps.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+  <x-steps steps="{{steps}}"> </x-steps>
+  <view style='height:50px;'></view>
+  <x-steps type="vertical" steps="{{steps}}"></x-steps>
+</x-page-doc>

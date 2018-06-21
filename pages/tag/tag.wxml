@@ -1,0 +1,7 @@
+<!--pages/tag/tag.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+  <x-tag type="parimary">灰色</x-tag>
+  <x-tag type="danger">会员发现</x-tag>
+  <x-tag type="warn">返现</x-tag>
+  <x-tag type="primary" plain="true">返现</x-tag>
+</x-page-doc>

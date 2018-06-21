@@ -1,0 +1,6 @@
+{
+  "usingComponents":{
+    "x-popup":"/X/popup/index",
+    "x-page-doc": "/X/pageDoc/index"
+  }
+}

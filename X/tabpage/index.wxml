@@ -1,0 +1,19 @@
+<!--XComponents/tabpage/tabpage.wxml-->
+
+<view class="weui-navbar">
+  <block wx:for="{{tabs}}" wx:key="{{index}}">
+    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+      
+      <view wx:if="{{activeIndex == index}}" class="weui-navbar__title" style='color:{{color}}'>{{item}}</view>
+      <view wx:else class="weui-navbar__title">{{item}}</view>
+    </view>
+  </block>
+  <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);background-color:{{color}}"></view>
+</view>
+
+<view class="weui-tab__panel">
+  <view class="weui-tab__content">
+    <slot></slot>
+  </view>
+  
+</view>

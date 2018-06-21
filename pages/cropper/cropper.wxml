@@ -1,0 +1,6 @@
+<!--pages/cropper/cropper.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+ <image src="{{tmp}}"  bindtap='selectedImages'></image>
+ <x-cropper wx:if="{{showCropper}}" src="{{src}}" bindSuccess="bindSuccess"></x-cropper>
+
+</x-page-doc>

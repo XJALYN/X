@@ -1,0 +1,5 @@
+/* pages/qrcode/qrcode.wxss */
+.qr-code{
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,7 @@
+<!--X/about/about.wxml-->
+<view class="about">
+  <image class="icon" wx:if="{{icon!=''}}" src='{{icon}}'></image>
+  <text class="name" wx:if="{{name!=''}}">{{name}}</text>
+  <text class="verson" wx:if="{{version!=''}}">{{version}}</text>
+  <text class="describe" wx:if="{{describe!= ''}}">{{describe}}</text>
+</view>

@@ -1,0 +1,5 @@
+<!--X/errer/error.wxml-->
+<view class="error">
+  <image class="icon" src="{{icon}}"></image>
+  <text class="title">{{title}}</text>
+</view>

@@ -1,0 +1,15 @@
+<!--X/vote/vote.wxml-->
+<view class="vote">
+  <view class="title">{{title}}</view>
+  <radio-group bindchange="bindChange" class="list">
+   <view class="item {{activeIndex==index&&(checked==true||checked=='true')?'item-check':''}}" wx:for="{{list}}" wx:key="{{index}}}">
+
+     <radio wx:if="{{checked==false||checked=='false'}}" class="vote-radio" value="{{index}}" data-value='{{item}}' />
+     <image class="icon" class="icon" src="http://a1.att.hudong.com/11/70/01300542684355141093700828282_s.png"></image>
+     <text class="vote-title">{{item.name}}</text>
+     <text class="vote-num">({{item.count}}票)</text>
+   </view>
+  </radio-group>
+  <button wx:if="{{!checked}}" class="btn-submit" type="success" bindtap='bindVote' disabled='{{voteItem==""?true:false}}' >提交</button>
+
+</view>

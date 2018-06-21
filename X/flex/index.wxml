@@ -1,0 +1,4 @@
+<!--XComponents/flex/flex.wxml-->
+<view class="weui-flex">
+  <slot class="weui-flex__item"> </slot>
+</view>

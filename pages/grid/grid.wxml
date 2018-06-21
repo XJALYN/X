@@ -1,0 +1,4 @@
+<!--pages/grid/grid.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+<x-grid list="{{list}}"></x-grid>
+</x-page-doc>

@@ -1,0 +1,6 @@
+<!--pages/capsule/capsule.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+ <x-capsule left-text="折扣" right-text="限时一份"> </x-capsule>
+ <x-capsule left-text="折扣" right-text="限时一份" color="red"> </x-capsule>
+ <x-capsule left-text="折扣" right-text="限时一份" color="blue"> </x-capsule>
+</x-page-doc>

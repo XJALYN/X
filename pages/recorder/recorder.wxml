@@ -1,0 +1,9 @@
+<!--pages/recorder/recorder.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+ <block wx:for="{{list}}" wx:key="{{index}}">
+  <x-audio src="{{item}}"></x-audio>
+ </block>
+ 
+ <x-recorder wx:if="{{showRecorder}}" bindSend="bindFinish" bindHide="bindHide"> </x-recorder>
+
+</x-page-doc>

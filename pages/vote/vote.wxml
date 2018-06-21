@@ -1,0 +1,4 @@
+<!--pages/vote/vote.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+   <x-vote list="{{list}}" bindSubmit="bindSubmit" checked="{{checked}}"></x-vote>
+</x-page-doc>

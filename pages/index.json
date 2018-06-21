@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "X组件",
+  "usingComponents":{
+    "x-grid":"/X/grid/index"
+  }
+}

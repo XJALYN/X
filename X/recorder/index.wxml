@@ -1,0 +1,25 @@
+<!--X/recorder/recorder.wxml-->
+
+<view class="recorder-container">
+   <view class="recorder">
+    <view class="bottom">
+      <text wx:if="{{finish}}" class="btn-cancle" bindtap='bindCancle'>取消</text>
+      <!-- 隐藏  -->
+      <image class="arrow" src='./images/arrow.png' wx:if="{{finish==false&&recording==false}}" bindtap='bindHide'></image>
+
+      <view class="circle-bg">
+      <image class="circle-img-animate" src="./images/animate.gif" wx:if="{{recording}}"></image>
+      <view class=" circle {{recording}}">
+      <view class="animated-circle ">
+      </view>
+        <image class="btn-recorder" src='./images/record.png' bindtouchstart='bindStartRecord' bindtouchend='bindStopRecord'></image>
+      </view>
+      </view>
+      <text wx:if="{{finish}}" class="btn-ok" bindtap='bindSend'>发送</text>
+    </view>
+    <text class="title"  style='{{finish?"display:none":""}}'>{{recording?'放手停止':'按住说话'}}</text>
+</view>
+
+
+</view>
+

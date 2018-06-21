@@ -1,0 +1,18 @@
+/* X/pageDoc/pageDoc.wxss */
+.page-doc{
+  width: calc(100% - 20px);
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.title{
+  margin-top: 10px;
+
+  font-size: 26px;
+  color: rgb(100,100,100);
+}
+.desc{
+  margin-top: 10px;
+  font-size: 30rpx;
+  color: rgb(50,50,50);
+}

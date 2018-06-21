@@ -1,0 +1,4 @@
+<!--pages/noticebar/noticebar.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+   <x-noticebar text="{{bar.text}}" leftIcon="{{bar.leftIcon}}" scrollable="{{bar.scrollable}}" mode="{{bar.mode}}"></x-noticebar>
+</x-page-doc>

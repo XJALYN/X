@@ -1,0 +1,10 @@
+<!--XComponents/grid/grid.wxml-->
+ <view class="weui-grids">
+            <block wx:for="{{list}}" wx:key="{{index}}">
+                <view  class="weui-grid" hover-class="weui-grid_active" bindtap='bindChange' data-value='{{item}}' data-index='{{index}}'>
+                    <image wx:if="{{item.icon!=''&&item.icon!=null}}" class="weui-grid__icon" src="{{item.icon}}" />
+                    <view class="weui-grid__label">{{item.name}}</view>
+                </view>
+            </block>
+        </view>
+

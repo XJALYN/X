@@ -1,0 +1,6 @@
+{
+  "usingComponents":{
+    "x-parse":"/X/parse/index",
+    "x-page-doc": "/X/pageDoc/index"
+  }
+}

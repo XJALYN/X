@@ -1,0 +1,6 @@
+{
+  "usingComponents":{
+    "x-qrcode":"/X/qrcode/index",
+    "x-page-doc": "/X/pageDoc/index"
+  }
+}

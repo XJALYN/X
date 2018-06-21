@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "error",
+  "usingComponents": {
+    "x-error":"/X/error/index",
+    "x-page-doc": "/X/pageDoc/index"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+      "x-loading": "/X/loading/index",
+      "x-page-doc": "/X/pageDoc/index"
+  }
+}

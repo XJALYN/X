@@ -1,0 +1,116 @@
+/* components/XJCalendar/XJCalendar.wxss */
+
+.month-list{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  font-size: 18px;
+  color: rgb(50,50,50);
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(240,240,240);
+}
+
+
+.month{
+  border-bottom: 2px solid rgba(0,0,0,0);
+  text-align: center;
+  color: rgb(100,100,100);
+  font-size: 15px;
+}
+
+.month-selected{
+  border-bottom: 2px solid rgb(50,50,50);
+  font-weight: bold;
+  text-align: center;
+  color: rgb(50,50,50);
+}
+
+.week-list{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  font-size: 15px;
+  color: rgb(173,173,173);
+}
+
+.week{
+  flex: 1;
+  text-align: center;
+}
+
+
+.day-list{
+  margin-top: 10px;
+  display: flex;
+  font-size: 15px;
+  color: rgb(100,100,100);
+  flex-wrap: wrap;
+}
+
+
+.day{
+  width: 107.5rpx;
+  min-height: 107.5rpx;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30rpx;
+  color: rgb(63,63,63);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.luarn{
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.dot{
+  margin-top: 3px;
+  margin-bottom: 3px;
+  width: 8px;
+  height: 8px;
+  color: red;
+  border-radius: 4px;
+  background: red;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+
+.dot-white{
+  background:white;
+}
+
+.dot-red{
+  background: red;
+}
+
+.day-couse{
+  color: rgb(250,0,0);
+}
+
+.day-choosed{
+  background:linear-gradient(right,rgb(255,0,0),rgb(255,99,25));
+  background: -moz-linear-gradient(right,rgb(255,0,0),rgb(255,99,25));
+  background:-webkit-linear-gradient(right,rgb(255,0,0),rgb(255,99,25));
+  color: white;
+  border-radius: 50%;
+   -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+
+.day-lose{
+  color:rgb(200,200,200);
+  background: white;
+}
+
+.last-day-color{
+  color:rgb(158,158,158);
+}

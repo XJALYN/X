@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "about",
+   "usingComponents": {
+        "x-plane": "/X/plane/index",
+        "x-tabpage": "/X/tabpage/index",
+        "x-page-doc": "/X/pageDoc/index"
+   }
+}

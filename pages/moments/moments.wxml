@@ -1,0 +1,12 @@
+<!--pages/moments/moments.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+ <x-moments 
+nickname="酷走天涯" avatarurl="http://imgsrc.baidu.com/forum/w=580/sign=1588b7c5d739b6004dce0fbfd9503526/7bec54e736d12f2eb97e1a464dc2d56285356898.jpg" 
+title="今天真美好" 
+images="{{images}}" 
+address="上海市浦东新区"
+date="2小时前"
+likeUsers="{{likeUsers}}" 
+audiourl="http://ws.stream.qqmusic.qq.com/M500001VfvsJ21xFqb.mp3?guid=ffffffff82def4af4b12b3cd9337d5e7&uin=346897220&vkey=6292F51E1E384E06DCBDC9AB7C49FD713D632D313AC4858BACB8DDD29067D3C601481D36E62053BF8DFEAF74C0A5CCFADD6471160CAF3E6A&fromtag=46" comments="{{comments}}"></x-moments> 
+
+</x-page-doc>

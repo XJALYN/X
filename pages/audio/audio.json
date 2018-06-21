@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "audio",
+  "usingComponents": {
+    "x-audio":"/X/audio/index",
+    "x-page-doc":"/X/pageDoc/index"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "calendar",
+  "usingComponents": {
+    "x-calendar": "/X/calendar/index",
+    "x-page-doc": "/X/pageDoc/index"
+  }
+}

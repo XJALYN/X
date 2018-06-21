@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "about",
+  "usingComponents": {
+    "x-recorder":"/X/recorder/index",
+    "x-audio":"/X/audio/index",
+    "x-page-doc": "/X/pageDoc/index"
+  }
+}

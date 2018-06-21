@@ -1,0 +1,8 @@
+/* pages/badge/badge.wxss */
+
+.demo__icon{
+  margin-top: 30px;
+  width: 30px;
+  height: 30px;
+  background:lightblue;
+}

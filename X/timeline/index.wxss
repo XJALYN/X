@@ -1,0 +1,86 @@
+/* X/timeline/timeline.wxss */
+.timeline{
+  padding-top: 10px;
+  min-height: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.timeline-vertical{
+  display: flex;
+}
+
+.top{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.top .dot{
+  border: 1px solid rgb(200,200,200);
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  box-sizing: border-box;
+}
+.top .line{
+  flex:1;
+  height: 1px;
+  background-color: rgb(200,200,200);
+}
+
+
+.bottom{
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.bottom .title{
+  color: rgb(100,100,100);
+  font-size: 28rpx;
+}
+
+.left{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: inherit;
+}
+
+.left .dot{
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  border:1px solid rgb(200,200,200);
+  box-sizing: border-box;
+
+}
+.left .line{
+
+  min-height: 60px;
+  width: 1px;
+  background-color: rgb(200,200,200);
+}
+
+.mid{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right{
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: inherit;
+}
+.right .title{
+  color: rgb(70,70,70);
+}
+
+

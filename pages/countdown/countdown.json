@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "countdown",
+  "usingComponents": {
+    "x-countdown":"/X/countdown/index",
+    "x-page-doc": "/X/pageDoc/index"
+  }
+}

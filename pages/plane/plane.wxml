@@ -1,0 +1,4 @@
+<!--pages/plane/plane.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+<x-plane title="标题" desc="打法的沙发沙发答复安抚阿斯蒂芬暗室逢灯阿斯蒂芬啊打发按时暗示法暗示法暗室逢灯阿斯蒂芬阿暗室逢灯" date="2018-08-04" from="新华社" ext="记者张三" icon="https://ws4.sinaimg.cn/large/006tKfTcly1frggkc4qv3j31hc0kuka2.jpg"> </x-plane>
+</x-page-doc>

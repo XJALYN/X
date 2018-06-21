@@ -1,0 +1,4 @@
+<!--pages/livePlayer/livePlayer.wxml-->
+ <x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+    <x-live-player routes="{{routes}}"> </x-live-player>
+ </x-page-doc>

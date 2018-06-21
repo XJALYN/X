@@ -1,0 +1,18 @@
+/* X/errer/error.wxss */
+.error{
+  width: 100%;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon{
+  width: 120px;
+  height: 120px;
+}
+.title{
+  font-size: 15px;
+  margin-top: 10px;
+  color: rgb(100,100,100);
+}

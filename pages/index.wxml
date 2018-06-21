@@ -1,0 +1,4 @@
+<!--pages/index.wxml-->
+<view>
+<x-grid list="{{list}}" bindChange="bindChange"></x-grid>
+</view>

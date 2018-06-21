@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "grid",
+  "usingComponents": {
+    "x-grid":"/X/grid/index",
+    "x-page-doc": "/X/pageDoc/index"
+  }
+}

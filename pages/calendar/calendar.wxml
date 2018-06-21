@@ -1,0 +1,4 @@
+<!--pages/calendar/calendar.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+<x-calendar time="{{time}}" tpl="{HH}:{MM}:{DD}"></x-calendar>
+</x-page-doc>

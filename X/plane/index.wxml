@@ -1,0 +1,21 @@
+<!--XComponents/plane/plane.wxml-->
+
+<view class="weui-panel">
+  <view class="weui-panel__bd">
+    <view class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+      <view wx:if="{{ icon != ''}}" class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+        <image class="weui-media-box__thumb" src="{{icon}}" />
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view wx:if="{{title != ''}}" class="weui-media-box__title">{{title}}</view>
+        <view wx:if="{{desc != ''}}" class="weui-media-box__desc">{{desc}}</view>
+        <view class="weui-media-box__info">
+          <view wx:if="{{from != ''}}" class="weui-media-box__info__meta">{{from}}</view>
+          <view wx:if="{{date != ''}}" class="weui-media-box__info__meta">{{date}}</view>
+          <view wx:if="{{ext != ''}}" class="weui-media-box__info__meta weui-media-box__info__meta_extra">{{ext}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

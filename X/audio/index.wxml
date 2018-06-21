@@ -1,0 +1,14 @@
+<!--X/audio/audio.wxml-->
+<view class="audio">
+ <view class="poster" style='background-color:{{backgroundColor}}'>
+
+    <image wx:if="{{!playing}}" class="play-icon" src='./images/play.png' bindtap='bindPlay'></image> 
+
+   <image wx:if="{{playing}}" class="stop-icon" src='./images/stop.png' bindtap='bindStop' ></image>
+
+ </view>
+ <view class="currentTime">{{currentTime}}</view>
+   <slider class="progress"  value='{{progress}}' max='1' step='0.001' bindtouchstart='bindStartChangeProgress' bindchanging='bindChangeProgress' bindchange='bindFinishChangeProgress' activeColor='{{backgroundColor}}'  block-size="20"></slider>
+ <view class="duration">{{duration}}</view>
+ 
+</view>

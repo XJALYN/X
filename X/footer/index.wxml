@@ -1,0 +1,18 @@
+<!--XComponents/footer/footer.wxml-->
+  
+
+    <view class="weui-footer">
+          <view class="weui-footer__links">
+                <view  class="weui-footer__link" wx:key="{{index}}" wx:for="{{links}}" bindtap='bindSelected' data-value='{{index}}'>{{item.name}}</view>
+            </view>
+         <view class="weui-footer__text">{{title}}</view>
+     </view>
+
+
+
+
+
+
+
+
+

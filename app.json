@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index",
+    "pages/popup/popup",
+    "pages/tag/tag",
+    "pages/badge/badge",
+    "pages/switch/switch",
+    "pages/capsule/capsule",
+    "pages/steps/steps",
+    "pages/icon/icon",
+    "pages/noticebar/noticebar",
+    "pages/parse/parse",
+    "pages/cropper/cropper",
+    "pages/imageloader/imageloader",
+    "pages/loading/loading",
+    "pages/qrcode/qrcode",
+    "pages/vote/vote",
+    "pages/about/about",
+    "pages/audio/audio",
+    "pages/calendar/calendar",
+    "pages/countdown/countdown",
+    "pages/error/error",
+    "pages/flex/flex",
+    "pages/footer/footer",
+    "pages/grid/grid",
+    "pages/livePlayer/livePlayer",
+    "pages/loadmore/loadmore",
+    "pages/moments/moments",
+    "pages/plane/plane",
+    "pages/recorder/recorder",
+    "pages/searchbar/searchbar",
+    "pages/tabpage/tabpage",
+    "pages/timeline/timeline"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "WeUI for 小程序",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

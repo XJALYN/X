@@ -1,0 +1,4 @@
+<!--pages/searchbar/searchbar.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+<x-searchbar placehold="男装,女装" text-list="{{searchbar.textList}}" bindClear="bindClear" bindChange="bindChange" bindInput="bindInput">  </x-searchbar>
+</x-page-doc>

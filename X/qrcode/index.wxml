@@ -1,0 +1,10 @@
+<!--X/qrcode/qrcode.wxml-->
+ <view class="canvas" style="width: {{length}}px; height: {{length}}px;">
+ 
+   <canvas class="qrcodePro" canvas-id="qrcodePro" style="width: {{length}}px; height: {{length}}px;">
+   <cover-image wx:if="{{icon!=''}}" class="icon" src="{{icon}}"></cover-image>
+   </canvas>  
+ 
+ </view>
+  
+

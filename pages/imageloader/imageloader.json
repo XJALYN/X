@@ -1,0 +1,6 @@
+{
+  "usingComponents":{
+    "x-image-loader":"/X/imageloader/index",
+    "x-page-doc":"/X/pageDoc/index"
+  }
+}

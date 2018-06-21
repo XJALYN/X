@@ -1,0 +1,83 @@
+<!--X/live-player/live-player.wxml-->
+<view class="live-container">
+  <live-player 
+  class="live-player"
+  id="player" 
+  src="{{routes[routeIndex].src}}" 
+  mode="live" 
+  autoplay 
+  bindstatechange="statechange" 
+  binderror="error" 
+  width="750px"
+  height="300px"
+  min-cache="1">
+   <cover-view class="mask-container" catchtap='bindShowHideMenu'>
+
+     <!-- 线路列表  -->
+     <cover-view class="list" wx:if="{{showControl&&showRoutes}}">
+       <block wx:for="{{routes}}"> 
+         <cover-view class="list-item" data-index="{{index}}" bindtap='bindChangeRoute'>{{item.name}}</cover-view>
+       </block>
+      </cover-view>
+
+      <!-- 弹幕显示区域  -->
+      <block wx:for="{{barrageList}}" wx:key="{{index}}" wx:if="{{showBarrage&&barrageOpen}}">
+<cover-view  class="barrage-delay barrage" style="position: absolute;top:{{item.top}}px;right:{{item.right}}px; z-index:1000px;color:white" >{{item.text}}</cover-view>
+      </block>
+  </cover-view> 
+     
+      
+<block wx:if="{{showControl}}">
+  <!-- 顶部导航 -->
+<!--  -->
+  <cover-view class="navigation-bar" wx:if="{{fullScreen==true}}">
+    <cover-image class="back-icon" src="./images/back.png"></cover-image>
+    <cover-view class="navgation-title">{{title}}</cover-view>
+    <cover-image wx:if="{{showOnlineCount}}" class="user-icon" src="./images/user.png"></cover-image>
+    <cover-view wx:if="{{showOnlineCount}}" class="navgation-title">{{onlineCount}}</cover-view>
+  </cover-view>
+  
+  <!--  -->
+
+  <!-- 底部导航非全屏时候显示  -->
+    <cover-view class="menu" wx:if="{{fullScreen==false}}">
+      <cover-view class="left-container">
+       <cover-view class="online-container" wx:if="{{showOnlineCount}}">
+         <cover-view class="dot"></cover-view>
+         <cover-view class="online-number">{{onlineCount}}</cover-view>
+       </cover-view>
+       <cover-view class="title">{{title}}</cover-view>
+    </cover-view>
+    <cover-image class="icon" src="./images/question.png" catchtap='bindFeedBack'></cover-image>
+    <cover-image class="icon" src="./images/fullScreen.png" bindtap='bindFullScreen'></cover-image>
+  </cover-view>
+  <!-- 底部导航非全屏时候显示  -->
+
+  <!--全屏时显示  -->
+ <cover-view class="menu" wx:if="{{fullScreen==true}}">
+    <cover-view style='flex:1'></cover-view>
+     <cover-view class="flex-row" catchtap='bindFeedBack'>
+       <cover-image class="icon-1" src="./images/question.png"></cover-image>
+       <cover-view class="title-1">反馈</cover-view>
+     </cover-view>
+
+    <cover-view wx:if="{{showBarrage}}" class="line"></cover-view>
+     <cover-view wx:if="{{showBarrage}}" class="flex-row" bindtap='bindShowHideBarrage'>
+       <cover-image class="icon-1" src="./images/{{barrageOpen?'barrage_open':'barrage_close'}}.png"></cover-image>
+       <cover-view class="title-1">弹幕</cover-view>
+     </cover-view>
+
+    <cover-view class="line"></cover-view>
+    <cover-view class="flex-row" catchtap='bindShowHideRoutes'>
+       <cover-image class="icon-1"src="./images/hd.png"></cover-image>
+       <cover-view class="title-1">{{routes[routeIndex].name}}</cover-view>
+    </cover-view>
+
+    <cover-view class="line"></cover-view>
+    <cover-image class="icon-1" src="./images/zoom.png" bindtap='bindZoomScreen'></cover-image>
+  </cover-view>
+  <!-- 全屏时显示  -->
+  </block>
+  </live-player>
+
+</view>

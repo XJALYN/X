@@ -1,0 +1,31 @@
+/* X/about/about.wxss */
+.about{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.icon{
+  margin-top: 30px;
+  width: 120px;
+  height: 120px;
+  max-height: 120px;
+  max-width: 120px;
+}
+.name{
+  margin-top: 20px;
+  color: rgb(50,50,50);
+  font-size: 17px;
+}
+.verson{
+  margin-top: 3px;
+  color: rgb(150,150,150);
+  font-size: 13px;
+}
+.describe{
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 13px;
+  color: rgb(150,150,150);
+}

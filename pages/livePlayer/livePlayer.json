@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "about",
+  "usingComponents": {
+    "x-live-player":"/X/live-player/index",
+    "x-page-doc": "/X/pageDoc/index"
+  }
+}

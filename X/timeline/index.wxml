@@ -1,0 +1,46 @@
+<!--X/timeline/timeline.wxml-->
+<view class="timeline" style='{{vertical==true||vertical=="true"? "display:flex;":""}}'>
+
+ <!-- 水平排列  -->
+ <block wx:if="{{vertical==false||vertical=='false'}}">
+ <view class="top">
+   <block wx:for="{{range}}">
+    <view class="dot" wx:if="{{value<index}}"></view>
+    <view class="dot" wx:if="{{value>=index}}" style='background-color:{{activeColor}};border-color:{{activeColor}}'></view>
+    <view class="line" wx:if="{{range.length>index+1 && index>=value}}"></view>
+    <view class="line" wx:if="{{range.length>index+1 && index<value}}" style='background-color:{{activeColor}}'></view>
+   </block>
+ </view>
+
+ <view class="bottom">
+  <block wx:for="{{range}}">
+     <view class="title" wx:if="{{index>value}}">{{rangeKey==''?item:item[rangeKey]}}</view>
+     <view class="title" wx:if="{{index<=value}}" style='color:{{activeColor}}'>{{rangeKey==''?item:item[rangeKey]}}</view>
+     <view style='flex:1' wx:if="{{range.length>index+1}}"></view>
+  </block>
+ </view>
+  </block>
+
+ <block wx:if='{{vertical==true||vertical=="true"}}'>
+ <!-- 垂直排列  -->
+ <view class="left">
+ 
+    <block wx:for="{{range}}">
+    <view class="dot" wx:if="{{value<index}}"></view>
+    <view class="dot" wx:if="{{value>=index}}" style='background-color:{{activeColor}};border-color:{{activeColor}}'></view>
+    <view class="line" wx:if="{{range.length>index+1 && index>=value}}"></view>
+    <view class="line" wx:if="{{range.length>index+1 && index<value}}" style='background-color:{{activeColor}}'></view>
+   </block>
+ </view>
+
+ <view class="right">
+   <block wx:for="{{range}}">
+     <view class="title" wx:if="{{index>value}}">{{rangeKey==''?item:item[rangeKey]}}</view>
+     <view class="title" wx:if="{{index<=value}}" style='color:{{activeColor}}'>{{rangeKey==''?item:item[rangeKey]}}</view>
+     <view style='flex:1' wx:if="{{range.length>index+1}}"></view>
+  </block>
+ </view>
+
+  </block>
+
+</view>

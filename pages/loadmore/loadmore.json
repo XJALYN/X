@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "about",
+  "usingComponents": {
+    "x-loadmore":"/X/loadmore/index",
+    "x-page-doc": "/X/pageDoc/index"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "about",
+  "usingComponents": {
+    "x-searchbar":"/X/searchbar/index",
+    "x-page-doc": "/X/pageDoc/index"
+  }
+}

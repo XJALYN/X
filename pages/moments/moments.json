@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "about",
+  "usingComponents": {
+    "x-moments":"/X/moments/index",
+    "x-page-doc": "/X/pageDoc/index"
+  }
+}

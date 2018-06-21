@@ -1,0 +1,4 @@
+<!--pages/footer/footer.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+<x-footer  title="上海麦界信息科技有限公司" links="{{links}}"></x-footer>
+</x-page-doc>

@@ -1,0 +1,4 @@
+<!--pages/audio/audio.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+<x-audio></x-audio>
+</x-page-doc>

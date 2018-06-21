@@ -1,0 +1,5 @@
+<!--pages/loadmore/loadmore.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+<x-loadmore loading="true"></x-loadmore>
+ <x-loadmore></x-loadmore>
+</x-page-doc>

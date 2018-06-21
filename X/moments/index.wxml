@@ -1,0 +1,69 @@
+<!--X/moment/moment.wxml-->
+<view class="moments" bindtap='bindHideTask'>
+   <!-- 头像  -->
+ 
+   <image class="moments__avator" bindtap='bindUserAvatar' src="{{avatarurl}}"></image>
+
+   <!--右边容器  -->
+   <view class="moments__right">
+      <text class="moments__nickname" bindtap='bindUserNickName'>{{nickname}}</text>
+      <text class="{{showAllText?'moments__text-all':'moments__text-5'}}">{{title}}</text>
+      <view class="moments__text--show" bindtap='bindDisplayTextStatus'>{{showAllText?'收起':'全文'}}</view>
+
+      <!-- 图片列表  -->
+      <view class="moments__img-list">
+        <block wx:for="{{images}}" wx:key="{{index}}">
+          <x-image class="{{images.length>1?'moments__img-two':'moments__img-one'}}" mode="widthFix" bindtap='bindPreviewImage' src="{{item}}"></x-image>
+        </block>
+      </view>
+
+  
+    
+      
+
+      <text class="moments__location" bindtap='bindAddress'>{{address}}</text>
+
+      <!--时间-->
+       <view class="moments__date-container">
+       <text class="moments__date">{{date}}</text>
+       <view style="flex:1"></view>
+       <image class="moments__message-btn" src="./images/message2.png" catchtap='bindShowTask'></image>
+       <view class="task-bg" wx:if="{{showTask}}">
+         <view class="task__item" bindtap='bindLike'>
+           <image class="task__item-icon" src="./images/heart1.png"></image>
+           <text class="task__item-title">点赞</text>
+         </view>
+         <view class="task__item">
+           <image class="task__item-icon" src="./images/message1.png"></image>
+           <text class="task__item-title" bindtap='bindComment'>评论</text>
+         </view>
+       </view>
+       </view>
+
+       <!-- 点赞区域  -->
+       <view class="moments__like-container" wx:if="{{likeUsers.length>0}}">
+
+         <image class="moments__like-icon" src="./images/heart2.png"></image>
+         <block  wx:for="{{likeUsers}}"  wx:key="{{index}}">
+           <view class="{{likeUsers.length-1==index?'moments__like-nickname_last':'moments__like-nickname'}} ">{{item.nickName}}</view>
+         </block>
+       </view>
+
+
+
+       <view class="moments__comment-container" wx:if="{{comments.length>0}}">
+
+          <block wx:for="{{comments}}">
+             <view class="moments__comment-item">
+              <text class="moments__comment__nickname">{{item.nickName}}</text>
+              <text class="moments__comment__at" wx:if="{{item.type==1}}">回复</text>
+              <text class="moments__comment__nickname" wx:if="{{item.type==1}}">{{item.commentNickName}}</text>
+
+              <text class="moments__comment__dot">:</text>
+              <text class="moments__comment__content">{{item.text}}</text>
+            </view>
+          </block>
+       </view>
+       
+   </view>
+</view>

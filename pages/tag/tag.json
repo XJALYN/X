@@ -1,0 +1,6 @@
+{
+  "usingComponents":{
+    "x-tag":"/X/tag/index",
+    "x-page-doc": "/X/pageDoc/index"
+  }
+}

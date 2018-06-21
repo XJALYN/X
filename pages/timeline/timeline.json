@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "时间线",
+  "usingComponents":{
+    "x-timeline":"/X/timeline/index",
+    "x-page-doc": "/X/pageDoc/index"
+  }
+}

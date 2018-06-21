@@ -1,0 +1,11 @@
+<!--pages/loading/loading.wxml-->
+ <x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+ <view class="container">
+ <block wx:for="{{list}}" wx:key="{{index}}">
+<view style='height:10px;'></view>
+   <x-loading type-index="{{item}}"></x-loading> 
+</block>
+ </view>
+
+
+</x-page-doc>

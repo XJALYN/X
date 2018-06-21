@@ -1,0 +1,6 @@
+<!--X/imageloader/imageloader.wxml-->
+<view class="container" >
+  <image catchlongpress='{{longtapSave?"bindlongtapSave":""}}' class="image" lazyLoad="{{lazyLoad}}" bindload="bindload" src='{{src}}' style='opacity: {{loaded?"1":"0"}}' binderror="bindError" mode='{{mode}}'  bindtap='{{preview?"bindTapPreview":""}}'></image>
+  <view class="weui-loading" wx:if="{{!error&&loaded==false&&(showLoading==true||showLoading=='true')}}"></view>
+  <image class="fail-icon" wx:if="{{error}}" src="./images/fail.png"></image>
+</view>

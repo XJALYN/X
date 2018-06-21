@@ -1,0 +1,4 @@
+<!--pages/error/error.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+<x-error title="你已来到月球,和地球失去联络喽~"></x-error>
+</x-page-doc>

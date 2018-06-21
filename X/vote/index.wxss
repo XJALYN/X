@@ -1,0 +1,52 @@
+/* X/vote/vote.wxss */
+
+.vote{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.list{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 60rpx)
+}
+.title{
+  margin-top: 30px;
+}
+.item{
+  margin-top: 5px;
+  height: 44px;
+  width: 100%;
+  background-color: rgb(250,250,250);
+  align-items: center;
+  display: flex;
+}
+.item-check{
+  background-color:  rgba(10,187,8,0.2);
+}
+.icon{
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+}
+.vote-radio{
+  margin-left: 10px;
+}
+.vote-title{
+  margin-left: 10px;
+  color: rgb(100,100,100);
+}
+.vote-num{
+  margin-left: 10px;
+  color: rgb(120,120,120);
+}
+
+.btn-submit{
+  margin-top: 30px;
+  width: calc(100% - 60rpx);
+  background-color: rgb(10,187,8);
+  color: white;
+}

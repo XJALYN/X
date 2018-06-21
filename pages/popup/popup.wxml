@@ -1,0 +1,11 @@
+<!--pages/popup/popup.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+  <x-popup show="{{show}}" type="top" bindtap="hide">
+    <view class="top">小伙子你该吃药了!</view>
+  </x-popup>
+
+
+  <button type="default" bindtap='show'>上面弹出  </button>
+  <view class="page__bd"></view>
+
+</x-page-doc>

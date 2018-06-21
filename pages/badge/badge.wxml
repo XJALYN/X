@@ -1,0 +1,11 @@
+<!--pages/badge/badge.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+
+ <view class="demo__icon">
+    <x-badge>19</x-badge>
+  </view>
+
+   <view class="demo__icon">
+    <x-badge  background-color="green">100+</x-badge>
+  </view>
+</x-page-doc>

@@ -1,0 +1,13 @@
+<!--pages/icon/icon.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+<view class="icon-wrap"> 
+  <block wx:for="{{icons}}" wx:key="{{index}}">
+    <view class="icon-container">
+     <x-icon type="{{item}}" class="icon"> </x-icon>
+     <text class="type">{{item}}</text>
+    </view>
+   
+  </block>
+</view>
+</x-page-doc>
+

@@ -1,0 +1,6 @@
+<!--pages/about/about.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+<x-about name="X组件演示" icon="https://ws3.sinaimg.cn/large/006tKfTcgy1fshlnoo8g0j3076076wfg.jpg" describe="丰富的小程序组件库,方便开发者快速开发小程序" 
+version="v1.0">
+</x-about> 
+</x-page-doc>

@@ -1,0 +1,8 @@
+<!--pages/qrcode/qrcode.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+<x-qrcode text="1" length="50" icon="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528874086170&di=c7359d247e7cbfe50356d9de36f50187&imgtype=0&src=http%3A%2F%2Fs16.sinaimg.cn%2Fmw690%2F002gJSHPgy6Zb5vzhq70f%26690"></x-qrcode>
+<x-qrcode text="2" foreground="red" length="100"></x-qrcode>
+<x-qrcode text="3" foreground="green" length="120" ></x-qrcode>
+<x-qrcode text="4" foreground="yellow"></x-qrcode>
+<x-qrcode text="5" foreground="purple" background="black" icon="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1528874086170&di=c7359d247e7cbfe50356d9de36f50187&imgtype=0&src=http%3A%2F%2Fs16.sinaimg.cn%2Fmw690%2F002gJSHPgy6Zb5vzhq70f%26690"></x-qrcode>
+</x-page-doc>

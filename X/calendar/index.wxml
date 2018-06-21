@@ -1,0 +1,31 @@
+<!--components/XJCalendar/XJCalendar.wxml-->
+<view class="item" style='background-color:{{backgroundColor}}'>
+ <view class="month-list" style='background-color:{{headerBackgroundColor}}'>
+   <block wx:for="{{monthList}}" wx:key="{{index}}">
+     <view wx:if="{{selectedMonthIndex==index}}" class="month month-selected"  style='color:{{headerActiveTextColor}};border-color:{{headerActiveTextColor}}' bindtap='bindSelectedMonth' data-value='{{item}}' data-index='{{index}}'>{{item.month}}月  </view>
+    <view wx:if="{{selectedMonthIndex!=index}}" class="month" bindtap='bindSelectedMonth' data-value='{{item}}' data-index='{{index}}'>{{item.month}}月  </view>
+     
+   </block>
+ </view>
+ <view class="week-list">
+  <view class="week" wx:for="{{weekList}}" wx:key="{{index}}">{{item}}</view>
+ </view>
+ <view class="day-list">
+   <view class="day" wx:for="{{empytGrids}}" wx:key="{{index}}"></view>
+   <block  wx:for="{{dates}}" wx:key="{{monthNum}}{{index}}">
+
+    <view wx:if="{{!item.lose}}" class="day {{item.courseSelected? 'day-couse':''}}  {{item.day==userSelectedDate.day?'day-choosed':''}} " bindtap='bindSelectedDay' data-value='{{item}}'>
+    
+     {{item.day}}
+     <text class="luarn" wx:if="{{!item.courseSelected}}">{{item.holiday?item.holiday:item.lunarDay}}</text>
+     <view class="dot {{item.day==userSelectedDate.day?'dot-white':'dot-red'}}" wx:if="{{item.courseSelected}}"></view>
+    </view >
+    <view wx:if="{{item.lose}}" class="day day-lose ">
+      {{item.day}}
+      <text class="luarn" wx:if="{{!item.courseSelected}}">{{item.holiday?item.holiday:item.lunarDay}}</text>
+      <view class="dot" wx:if="{{item.courseSelected}}"></view>
+    </view>
+   </block>
+   <view class="day" wx:for="{{lastEmptyGrids}}" wx:key="{{index}}"></view>
+ </view>
+</view>

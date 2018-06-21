@@ -1,0 +1,10 @@
+<!--pages/countdown/countdown.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+  <x-countdown time="{{time}}" tpl="{SS}"> </x-countdown>
+  <x-countdown time="{{time}}" tpl="{MM}:{SS}"> </x-countdown>
+
+  <x-countdown time="{{time}}" tpl="{HH}:{MM}:{SS}"> </x-countdown>
+    <x-countdown time="{{time}}" tpl="{yy}年{mm}月{dd}日{HH}:{MM}:{SS}"> 
+  </x-countdown>
+ 
+</x-page-doc>

@@ -1,0 +1,4 @@
+<!--X/loading/loading.wxml-->
+ <view class="loading-container">
+    <view class="loadings loadings-{{typeIndex}}"/>
+ </view>

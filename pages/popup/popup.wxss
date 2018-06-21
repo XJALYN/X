@@ -1,0 +1,10 @@
+/* pages/popup/popup.wxss */
+
+.top {
+  min-height: 50px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  width: 100vw;
+}
