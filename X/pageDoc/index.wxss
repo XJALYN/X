@@ -5,6 +5,7 @@
   flex-direction: column;
   padding-left: 10px;
   padding-right: 10px;
+  box-sizing: border-box;
 }
 .title{
   margin-top: 10px;

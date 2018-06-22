@@ -1,0 +1,4 @@
+<!--X/animation/animation.wxml-->
+<view class="animated {{type}} {{repeat==true||repeat=='true'?'infinite':''}}">
+    <slot> </slot>
+</view>

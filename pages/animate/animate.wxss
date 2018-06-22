@@ -1,0 +1,24 @@
+/* pages/animate/animate.wxss */
+.container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  
+}
+x-animate{
+  width: 30vw;
+  height: 30vw;
+  text-align: center;
+  line-height: 30vw;
+  border:1px solid rgb(245,245,245);
+  font-size: 13px;
+  font-weight: 500;
+  
+}
+.text{
+   color: rgb(247,215,0);
+   text-shadow: 0px 2px 2px rgba(0,0,0,0.1);
+ 
+}

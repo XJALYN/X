@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "动画组",
+  "usingComponents":{
+    "x-animate":"/X/animate/index",
+    "x-page-doc":"/X/pageDoc/index"
+  }
+}

@@ -1,6 +1,8 @@
 {
   "pages": [
+    "pages/animate/animate",
     "pages/index",
+    
     "pages/popup/popup",
     "pages/tag/tag",
     "pages/badge/badge",

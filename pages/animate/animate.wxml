@@ -1,0 +1,11 @@
+<!--pages/animate/animate.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+<view class="container">
+<block wx:for="{{list}}" wx:key="{{index}}">
+<x-animate type="{{animates[index]}}" >
+ <view class="text" bindtap="bindTapAnimate" data-index="{{index}}">{{item}} </view> 
+</x-animate>
+</block>
+</view>
+
+</x-page-doc>
