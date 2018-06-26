@@ -1,0 +1,16 @@
+
+.x-color-primary{
+  color: rgb(200,228,255);
+}
+.x-color-info{
+  color:rgb(226,227,229);
+}
+.x-color-success{
+  color: rgb(204,240,219);
+}
+.x-color-danger{
+  color: rgb(255,212,227);
+}
+.x-color-warning{
+  color: rgb(255,245,203);
+}

@@ -1,6 +1,0 @@
-<!--X/pageDoc/pageDoc.wxml-->
-<view class="page-doc">
-   <view class="title">{{title}}</view>
-   <text class="desc">{{desc}}</text>
-   <slot></slot>
-</view>

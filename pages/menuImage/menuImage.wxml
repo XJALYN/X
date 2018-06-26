@@ -1,0 +1,4 @@
+<!--pages/menuImage/menuImage.wxml-->
+<view>
+  <x-menu-image list="{{list}}" bindchange="bindChange"></x-menu-image>
+</view>

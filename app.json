@@ -1,8 +1,10 @@
 {
   "pages": [
-    "pages/animate/animate",
-    "pages/index",
     
+    "pages/index",
+    "pages/menuImage/menuImage",
+    "pages/multingKeyboard/multingKeyboard",
+    "pages/animate/animate",
     "pages/popup/popup",
     "pages/tag/tag",
     "pages/badge/badge",
@@ -33,6 +35,7 @@
     "pages/searchbar/searchbar",
     "pages/tabpage/tabpage",
     "pages/timeline/timeline"
+    
   ],
   "window": {
     "navigationBarTextStyle": "black",

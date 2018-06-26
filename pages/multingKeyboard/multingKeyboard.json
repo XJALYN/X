@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "多功能键盘",
+  "usingComponents":{
+    "x-multing-keyboard":"/X/multingKeyboard/index",
+    "x-page-doc":"/X/pageDoc/index"
+  }
+}

@@ -1,0 +1,7 @@
+<!--X/menuImage/index.wxml-->
+<view class="x-menu-image">
+  <view class="x-item" wx:for="{{list}}" data-index='{{index}}' bindtap='bindtapItem'>
+     <image class="x-item-icon" src="{{item.src}}"></image>
+     <view class="x-item-title">{{item.title}}</view>
+  </view>
+</view>

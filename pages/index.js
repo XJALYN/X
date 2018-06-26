@@ -5,6 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
+    doc:{
+      title:"X",
+      desc:"X组件提供了丰富的小程序开发组件,能够帮助开发更快的开发小程序,下面是各个组件的演示"
+    },
 
    list:[
      { name: "about", url: "/pages/about/about", icon:"/images/about.png"},
@@ -34,7 +38,10 @@ Page({
      { name: "capsule", url: "/pages/capsule/capsule", icon: "/images/capsule.png"},
      { name: "switch", url: "/pages/switch/switch", icon: "/images/switch.png"},
      { name: "badge", url: "/pages/badge/badge", icon: "/images/badge.png"},
-     { name: "popup", url: "/pages/popup/popup", icon: "/images/popup.png"}
+     { name: "popup", url: "/pages/popup/popup", icon: "/images/popup.png"},
+     { name: "animate", url: "/pages/animate/animate", icon:"/images/animate.png"},
+     { name: "multingKeyboard", url:"/pages/multingKeyboard/multingKeyboard",icon:"/images/keyboard.png"},
+     { name: "menuImage", url: "/pages/menuImage/menuImage", icon:"/images/menu.png"}
    ]
    
   },

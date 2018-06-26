@@ -1,0 +1,154 @@
+/* X/multingKeyboard/index.wxss */
+.top-container{
+  height: 50px;
+  border-bottom: 0.5px solid rgb(220,220,220);
+  border-top: 0.5px solid rgb(220,220,220);
+  display: flex;
+  align-items: center;
+}
+
+
+.recorder-container{
+  position: fixed;
+  width: 140px;
+  height: 160px;
+  bottom: calc(50vh - 80px);
+  left: calc(50vw - 70px);
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.3);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.btn-recorder{
+  flex:1;
+  height: 36px;
+  line-height: 36px;
+  box-sizing: border-box;
+}
+
+.recorder-container__title--revocation{
+  background-color: red;
+  color: white;
+}
+
+.recorder-container__image{
+  width: 60px;
+  height: 60px;
+
+}
+.recorder-container__title{
+  margin-top: 20px;
+  color: white;
+  text-decoration: underline;
+}
+
+
+.icon-recorder{
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-input{
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.input-container{
+  flex: 1;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+.text-input-bg{
+  border:1px solid rgb(200,200,200);
+  height: 36px;
+  border-radius: 3px;
+  line-height: 30px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 7px;
+  left: 0px;
+  right: 0px;
+  bottom: 7px;
+}
+
+.text-input{
+  margin-left: 10px;
+  flex:1;
+  height:100%;
+  width: 100%;
+}
+
+.icon-emotion{
+  margin-left: 10px;
+  margin-right: 10px;
+   width: 30px;
+  height: 30px;
+}
+.icon-add{
+  margin-right: 10px;
+  width: 34px;
+  height: 34px;
+}
+.content-container{
+  width: 100%;
+}
+
+.add-container{
+  width: 100%;
+  height: 220px;
+ 
+}
+
+
+.add-item-container{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-item{
+  margin-left: 20px;
+  width: calc(25vw - 25px);
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-item__icon-container{
+  border: 1px solid rgb(120,120,120);
+  border-radius: 15px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-item__icon{
+  width: 30px;
+  height: 30px;
+}
+
+.add-item__title{
+  margin-top: 5px;
+  width: 100%;
+  height: 20px;
+  font-size: 13px;
+  color: rgb(120,120,120);
+  text-align: center;
+  line-height: 20px;
+}

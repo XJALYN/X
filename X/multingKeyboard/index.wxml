@@ -1,0 +1,34 @@
+<!--X/multingKeyboard/index.wxml-->
+<view class="multing-keyboard">
+  <view class="recorder-container" wx:if="{{recordStatus==22||recordStatus==23}}">
+     <image class="recorder-container__image " src='./images/{{recordStatus==22?"record":"revocation"}}.svg'> </image>
+     <text class="recorder-container__title" style='background-color:{{recordStatus==23?"red":""}}'>{{recordStatus==22?'手指上滑,取消发送':'松开手指,取消发送'}}</text>
+  </view>
+  <view class="top-container">
+    <image class="icon-recorder" src='./images/audio.svg' bindtap='bindtapAudioIcon' wx:if="{{showInput}}"></image>
+    <image class="icon-input" src='./images/input.svg' bindtap='bindTapInputIcon' wx:if="{{!showInput}}"></image>
+    <view class="input-container" wx:if="{{showInput}}">
+    <view   class="text-input-bg"  ></view>
+    <input class="text-input" auto-focus='{{inputFocus}}' bindconfirm='bindInputConfirm' value='{{inputText}}'></input>
+    </view>
+    
+    <button class="btn-recorder"  wx:if="{{!showInput}}" bindtouchstart='bindStartRecord' bindtouchend='bindStopRecord' bindtouchcancel='bindCancleRecord' bindtouchmove='bindWillCancle'>{{recordTitle}}</button>
+    <image wx:if="{{!showEmoj}}" class="icon-emotion" src='./images/emoj.svg' bindtap='bindtapEmoj'></image>
+    <image wx:if="{{showEmoj}}" class="icon-emotion" src='./images/input.svg' bindtap='bindTapInputIcon'></image>
+    <image class="icon-add" src='./images/add.svg' bindtap='bindTapShowAdd'></image>
+  </view>
+
+  <!-- 底部内容区域 -->
+   <view class="content-container">
+       <swiper class="add-container" wx:if="{{showAdd}}">
+          <swiper-item class="add-item-container" wx:for="{{functionList}}" wx:key="{{index}}" wx:for-index="i">
+             <view class="add-item" wx:for="{{item}}" wx:key="{{index}}" wx:for-index="j">
+               <view class="add-item__icon-container" bindtap='bindTapFunction' data-index='{{i*8 + j}}'>
+                  <image class="add-item__icon" src="{{item.src}}"></image>
+               </view>
+               <text class="add-item__title">{{item.title}}</text>
+             </view>
+          </swiper-item>
+       </swiper>
+  </view> 
+</view>

@@ -1,4 +1,5 @@
 <!--pages/index.wxml-->
 <view>
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}"></x-page-doc>
 <x-grid list="{{list}}" bindChange="bindChange"></x-grid>
 </view>

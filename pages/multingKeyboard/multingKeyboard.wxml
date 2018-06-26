@@ -1,0 +1,6 @@
+<!--pages/multingKeyboard/multingKeyboard.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+  <x-multing-keyboard bindchangefunction = "bindChangeFunction" bindrecordfinish="bindRecordFinish" bindinputfinish="bindInputFinish">
+  
+  </x-multing-keyboard>
+</x-page-doc>
