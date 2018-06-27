@@ -5,15 +5,13 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding-left: 30rpx;
 }
 .x-item{
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 30rpx;
-  width: calc(20% - 36rpx);
+  width: 20%;
 }
 
 .x-item-icon{

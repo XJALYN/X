@@ -1,0 +1,7 @@
+<!--pages/gradualNumber/gradualNumber.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+<x-gradual-number class="gradual-number" startNumber="0" endNumber="{{endNumber}}" speed="10"> </x-gradual-number>
+
+<button class="btn-start" bindtap='bindChange'>开始变更(100)</button>
+</x-page-doc>
+

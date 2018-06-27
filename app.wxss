@@ -33,3 +33,7 @@ page{
     text-align: left;
     font-size: 14px;
 }
+.x-list-row{
+  display: flex;
+  flex-wrap: wrap;
+}

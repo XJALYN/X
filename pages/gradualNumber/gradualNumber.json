@@ -1,0 +1,6 @@
+{
+  "usingComponents":{
+    "x-page-doc":"/X/pageDoc/index",
+    "x-gradual-number":"/X/gradualNumber/index"
+  }
+}

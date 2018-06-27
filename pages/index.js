@@ -41,7 +41,9 @@ Page({
      { name: "popup", url: "/pages/popup/popup", icon: "/images/popup.png"},
      { name: "animate", url: "/pages/animate/animate", icon:"/images/animate.png"},
      { name: "multingKeyboard", url:"/pages/multingKeyboard/multingKeyboard",icon:"/images/keyboard.png"},
-     { name: "menuImage", url: "/pages/menuImage/menuImage", icon:"/images/menu.png"}
+     { name: "menuImage", url: "/pages/menuImage/menuImage", icon:"/images/menu.png"},
+     { name: "gradualNumber", url: "/pages/gradualNumber/gradualNumber", icon:"/images/gradual_number.png"},
+     { name: "circleProgress", url: "/pages/circleProgress/circleProgress", icon:"/images/circle_progress.png"}
    ]
    
   },

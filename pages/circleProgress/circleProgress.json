@@ -1,0 +1,6 @@
+{
+  "usingComponents":{
+    "x-circle-progress":"/X/circleProgress/index",
+    "x-page-doc":"/X/pageDoc/index"
+  }
+}

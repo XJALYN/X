@@ -1,0 +1,31 @@
+<!--pages/circleProgress/circleProgress.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+<view class="x-list-row">
+<x-circle-progress progress="0.1"  radius="30" lineWidth="5" tintColor="red">
+   <text style='color:purple'>10%</text>
+</x-circle-progress>
+
+<x-circle-progress progress="0.5"  radius="30">
+  50%
+</x-circle-progress>
+
+<x-circle-progress progress="0.8"  radius="30" gradient="true">
+  80%
+</x-circle-progress>
+
+<x-circle-progress progress="100"  radius="40" gradient="true">
+  <icon type='success' style="color:green"></icon>
+</x-circle-progress>
+
+<x-circle-progress progress="0.3"  radius="50" gradient="true" gradientStartColor="rgb(80,229,69)" gradientStopColor="rgb(255,209,46)">
+  <image style='width:100px;height:100px;border-radius:50%' src='http://www.taopic.com/uploads/allimg/140711/240384-140G10Q54990.jpg'></image>
+</x-circle-progress>
+
+<x-circle-progress progress="0.5" animated="true" radius="50" gradient="true" gradientStartColor="rgb(80,229,69)" gradientStopColor="rgb(255,209,46)">
+  <image style='width:100px;height:100px;border-radius:50%' src='http://pic30.photophoto.cn/20140119/0036036897536260_b.jpg'></image>
+</x-circle-progress>
+</view>
+
+
+
+</x-page-doc>

@@ -1,0 +1,12 @@
+<!--X/circleProgress/index.wxml-->
+<view class="x-circle-progress" style='width:{{radius*2+lineWidth*2}}px;height:{{radius*2+lineWidth*2}}px;'>
+  <!-- 和父容器保持一致即可  -->
+  <!--  -->
+  <view class="bg-view" style='width:{{radius*2+lineWidth*2}}px;height:{{radius*2+lineWidth*2}}px;border:{{lineWidth}}px {{bgColor}} solid'></view>
+  <canvas style='width:{{radius*2+lineWidth*2}}px;height:{{radius*2+lineWidth*2}}px' canvas-id='circle-progress'> </canvas>
+  <!-- 外部内容  -->
+  <view class="x-slot-container" style='padding:{{lineWidth}}px {{lineWidth}}px'>
+    <slot></slot>
+  </view>
+  
+</view>

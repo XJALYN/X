@@ -1,0 +1,21 @@
+/* X/circleProgress/index.wxss */
+.x-circle-progress{
+  position: relative;
+}
+.bg-view{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+.x-slot-container{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

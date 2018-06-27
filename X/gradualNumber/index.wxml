@@ -1,0 +1,4 @@
+<!--X/gradualNumber/index.wxml-->
+<text>
+  {{currentValue}}
+</text>

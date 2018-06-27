@@ -2,6 +2,8 @@
   "pages": [
     
     "pages/index",
+    "pages/circleProgress/circleProgress",
+    "pages/gradualNumber/gradualNumber",
     "pages/menuImage/menuImage",
     "pages/multingKeyboard/multingKeyboard",
     "pages/animate/animate",
