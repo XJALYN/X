@@ -1,0 +1,12 @@
+<!--X/weather/weather.wxml-->
+<view class="weather">
+  <block wx:if="{{loaded}}">
+   <image class="icon" src="./icons/{{iconName}}.svg"></image>
+   <view class="left-container">
+   <view class="date">{{date}}</view>
+   <view class="title">{{weatherDesc}}  {{temperature}}  {{wind}}</view>
+   </view>
+   
+   
+  </block>
+</view>

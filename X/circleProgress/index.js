@@ -17,7 +17,7 @@ Component({
                 console.log("内存释放了")
                 clearInterval(timer)
              }
-          },10)
+          },20)
 
         }else{
           this.draw(parseFloat(newValue))

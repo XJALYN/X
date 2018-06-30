@@ -43,7 +43,8 @@ Page({
      { name: "multingKeyboard", url:"/pages/multingKeyboard/multingKeyboard",icon:"/images/keyboard.png"},
      { name: "menuImage", url: "/pages/menuImage/menuImage", icon:"/images/menu.png"},
      { name: "gradualNumber", url: "/pages/gradualNumber/gradualNumber", icon:"/images/gradual_number.png"},
-     { name: "circleProgress", url: "/pages/circleProgress/circleProgress", icon:"/images/circle_progress.png"}
+     { name: "circleProgress", url: "/pages/circleProgress/circleProgress", icon:"/images/circle_progress.png"},
+     { name: "weather", url:"/pages/weather/weather",icon:"/images/weather.png"}
    ]
    
   },
