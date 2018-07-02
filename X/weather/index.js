@@ -56,12 +56,20 @@ Component({
           var temperature = weatherData.temperature
           var weatherDesc = weatherData.weatherDesc
           var wind = weatherData.wind
+          var iconName = ""
+          if(weatherDesc.indexOf("微风")){
+             iconName = "微风"
+          }else{
+            weatherDesc.split("转")[0]
+          }
+          
 
           this.setData({
             weatherData, city, pm25, date, temperature, weatherDesc, wind,
             loaded: true,
-            iconName: weatherDesc.split("转")[0]
+            iconName: iconName
           })
+
           
       
         },
