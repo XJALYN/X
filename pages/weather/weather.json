@@ -1,0 +1,6 @@
+{
+  "usingComponents":{
+    "x-weather":"/X/weather/index",
+    "x-page-doc":"/X/pageDoc/index"
+  }
+}

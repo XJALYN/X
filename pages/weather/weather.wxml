@@ -1,0 +1,5 @@
+<!--pages/weather/weather.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+<x-weather></x-weather>
+
+</x-page-doc>
