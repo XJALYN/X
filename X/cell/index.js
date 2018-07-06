@@ -29,6 +29,18 @@ Component({
     showTopLine:{
       type: String,
       value: true
+    },
+    type:{
+      type:String,
+      value:"text" // text input switch
+    },
+    placehold:{
+      type:String,
+      value:""
+    },
+    value:{
+      type:null,
+      value:""
     }
   },
 
@@ -49,6 +61,9 @@ Component({
           url: this.data.url,
         })
       }
+    },
+    bindConfirm(e){
+      this.triggerEvent("confirm",{value:e.detail.value})
     }
   }
 })

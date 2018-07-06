@@ -1,0 +1,10 @@
+<!--X/checkboxGroup/index.wxml-->
+<checkbox-group bindchange="checkboxChange">
+                <label class="x-cell" wx:for="{{list}}" wx:key="value">
+                    <checkbox class="x-check" value="{{index}}" checked="{{item.checked}}" disabled='{{item.disable}}'/>
+                        <icon class="x-icon-checkbox" type="circle" size="23" wx:if="{{!item.checked}}"></icon>
+                        <icon class="x-icon-checkbox" type="success" size="23" wx:if="{{item.checked}}"></icon>
+                 
+                    <view class="x-cell__title">{{item[value]}}</view>
+                </label>
+</checkbox-group>

@@ -1,0 +1,4 @@
+<!--pages/input/input.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+  <x-radio-group radioItems="{{radioItems}}" value="name" activeIndex="1"></x-radio-group>
+</x-page-doc>

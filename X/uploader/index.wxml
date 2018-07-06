@@ -1,0 +1,9 @@
+<!--components/uploader/index.wxml-->
+
+  <view class="uploader" style='width:{{width}};height:{{height}}'>
+   <image class="icon" src="{{src}}" bindtap='bindTapImage'></image>
+  <text  class="progress" wx:if="{{uploadStatus==0}}">{{progress}}%</text>
+  <icon  type='warn' class="icon-fail" wx:if="{{uploadStatus == 2}}" bindtap='bindTapImage'></icon>
+  </view>
+ 
+

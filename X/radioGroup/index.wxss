@@ -1,0 +1,11 @@
+/* X/input/index.wxss */
+.x-cell{
+  display: flex;
+  padding: 12px 10px 12px 10px;
+  border-bottom:1px solid rgb(245,245,245);
+  background-color: white;
+  
+}
+.x-check{
+  display: none;
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+   "usingComponents":{
+     "x-page-doc":"/X/pageDoc/index",
+     "x-checkbox-group":"/X/checkboxGroup/index"
+   }
+}

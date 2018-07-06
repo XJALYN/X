@@ -1,0 +1,16 @@
+<!--X/input/index.wxml-->
+<view>
+
+     <radio-group bindchange="radioChange">
+                <label class="x-cell x-check__label" wx:for="{{radioItems}}" wx:key="value">
+                    <radio class="x-check" value="{{index}}" checked="{{activeIndex==index}}"/>
+
+                    <view class="x-cell__bd">{{value==''?item:item[value]}}</view>
+                    <view style='flex:1'></view>
+                    <view class="x-cell__ft x-cell__ft_in-radio" wx:if="{{activeIndex==index}}">
+                        <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+                    </view>
+                </label>
+    </radio-group>
+
+</view>

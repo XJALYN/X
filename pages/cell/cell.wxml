@@ -1,0 +1,7 @@
+<!--pages/cell/cell.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+  <x-cell icon="https://ws2.sinaimg.cn/large/006tNc79gy1fsvcdvesk6j3076076wfg.jpg" title="带图标" type="text" detail="内容" value="内容"></x-cell>
+  <x-cell title="标题1" type="text" detail="内容" value="内容"></x-cell>
+  <x-cell title="标题2" type="input" detail="内容" value="输入的内容" placehold="请输入你的姓名"></x-cell>
+  <x-cell title="标题3" type="switch" detail="内容" value="true"></x-cell>
+</x-page-doc>

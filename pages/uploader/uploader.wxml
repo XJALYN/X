@@ -1,0 +1,10 @@
+<!--pages/uploader/uploader.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+<!--//"http://dev.mytvsight.com/files/uploadFile"  -->
+  <x-uploader 
+   url="http://dev.mytvsight.com/files/uploadFile"
+   params="{{uploadParams}}"
+   bindSuccess="bindUploadSuccess" 
+   bindError="bindUploadFail"
+   ></x-uploader>
+</x-page-doc>

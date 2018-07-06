@@ -10,6 +10,8 @@
      <text class="vote-num">({{item.count}}票)</text>
    </view>
   </radio-group>
+
+  
   <button wx:if="{{!checked}}" class="btn-submit" type="success" bindtap='bindVote' disabled='{{voteItem==""?true:false}}' >提交</button>
 
 </view>

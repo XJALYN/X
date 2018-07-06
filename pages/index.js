@@ -13,8 +13,14 @@ Page({
    list:[
      { name: "about", url: "/pages/about/about", icon:"/images/about.png"},
      { name: "audio", url: "/pages/audio/audio", icon: "/images/audio.png"},
+     { name: "animate", url: "/pages/animate/animate", icon: "/images/animate.png" },
+     { name: "badge", url: "/pages/badge/badge", icon: "/images/badge.png" },
      { name: "calendar", url: "/pages/calendar/calendar", icon: "/images/calendar.png"},
+     { name: "cell", url: "/pages/cell/cell", icon: "/images/cell.png"},
+     { name: "circleProgress", url: "/pages/circleProgress/circleProgress", icon: "/images/circle_progress.png" },
+     { name: "capsule", url: "/pages/capsule/capsule", icon: "/images/capsule.png" },
      { name: "countdown", url: "/pages/countdown/countdown", icon: "/images/countdown.png"},
+     { name: "cropper", url: "/pages/cropper/cropper", icon: "/images/cropper.png" },
      { name: "error", url: "/pages/error/error", icon: "/images/error.png" },
      { name: "footer", url: "/pages/footer/footer", icon: "/images/footer.png"},
      { name: "grid", url: "/pages/grid/grid", icon: "/images/grid.png"},
@@ -31,20 +37,21 @@ Page({
      { name: "loading", url: "/pages/loading/loading", icon: "/images/loading.png"},
      { name: "imageloader", url: "/pages/imageloader/imageloader", icon: "/images/about.png"},
      { name: "icon",url:"/pages/icon/icon",icon:"/images/icon.png"},
-     { name: "cropper", url: "/pages/cropper/cropper", icon: "/images/cropper.png"},
      { name: "parse", url: "/pages/parse/parse", icon: "/images/parse.png"},
      { name: "noticebar", url: "/pages/noticebar/noticebar", icon: "/images/noticebar.png"},
      { name: "steps", url: "/pages/steps/steps", icon: "/images/steps.png"},
-     { name: "capsule", url: "/pages/capsule/capsule", icon: "/images/capsule.png"},
      { name: "switch", url: "/pages/switch/switch", icon: "/images/switch.png"},
-     { name: "badge", url: "/pages/badge/badge", icon: "/images/badge.png"},
+     { name: "uploader", url: "/pages/uploader/uploader", icon:"/images/uploader.png"},
+     
      { name: "popup", url: "/pages/popup/popup", icon: "/images/popup.png"},
-     { name: "animate", url: "/pages/animate/animate", icon:"/images/animate.png"},
+    
      { name: "multingKeyboard", url:"/pages/multingKeyboard/multingKeyboard",icon:"/images/keyboard.png"},
      { name: "menuImage", url: "/pages/menuImage/menuImage", icon:"/images/menu.png"},
      { name: "gradualNumber", url: "/pages/gradualNumber/gradualNumber", icon:"/images/gradual_number.png"},
-     { name: "circleProgress", url: "/pages/circleProgress/circleProgress", icon:"/images/circle_progress.png"},
-     { name: "weather", url:"/pages/weather/weather",icon:"/images/weather.png"}
+     
+     { name: "weather", url:"/pages/weather/weather",icon:"/images/weather.png"},
+     { name: "radioGroup", url: "/pages/radioGroup/radioGroup", icon:"/images/radio.png"},
+     { name: "checkboxGroup", url:"/pages/checkboxGroup/checkboxGroup",icon:"/images/check.png"}
    ]
    
   },

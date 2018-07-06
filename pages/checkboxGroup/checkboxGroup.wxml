@@ -1,0 +1,4 @@
+<!--pages/checkboxGroup/checkboxGroup.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+   <x-checkbox-group list="{{list}}" value="name" activeIndexs="{{activeIndexs}}" bindChange="bindChange" disableIndexs="{{disableIndexs}}"></x-checkbox-group>
+</x-page-doc>

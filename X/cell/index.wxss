@@ -5,9 +5,9 @@
   margin-top: 10px;
   position: relative;
   overflow: hidden;
-    border-bottom: 1rpx solid #e5e5e5;
-     border-top: 1rpx solid #e5e5e5;
-     
+  border-bottom: 1rpx solid #e5e5e5;
+  border-top: 1rpx solid #e5e5e5;
+  width: 100vw; 
 }
 
 .weui-panel:first-child {

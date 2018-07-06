@@ -4,12 +4,18 @@
     <view class="weui-cell weui-cell_access" hover-class="weui-cell_active">
       <image wx:if="{{icon != ''}}" src="{{icon}}" class="weui-cell__icon" />
 
-      <view class="weui-cell__bd weui-cell_primary">
+      <view class="weui-cell__bd weui-cell_primary" >
         <view>{{title}}</view>
       </view>
-      <view class="weui-cell__ft weui-cell__ft_in-access">{{detail}}
+      
+      <!-- 文字类型  -->
+      <view wx:if="{{type=='text'}}" class="weui-cell__ft weui-cell__ft_in-access">{{value}}
         <view class="weui-badge weui-badge_dot" wx:if="{{dotNum!=0}}">{{dotNum}}</view>
       </view>
+
+      <!-- 输入框  -->
+      <input wx:if="{{type=='input'}}" class="weui-cell__ft" placeholder='{{placehold}}' value="{{value}}" bindconfirm='bindConfirm' bindblur='bindConfirm'></input>
+      <switch wx:if="{{type=='switch'}}" checked='{{value}}' class="weui-cell__ft" style='margin-right:-5px;'></switch>
     </view>
   </view>
 </view>
