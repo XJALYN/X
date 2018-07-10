@@ -1,0 +1,6 @@
+<!--pages/text/text.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+  <x-text value="{{value}}" style='margin-left:10px;margin-right:10px;'></x-text>
+
+  <x-text value="{{value}}"fontSize="18px" color="red" foldColor="green" style='margin-left:10px;margin-right:10px;'></x-text>
+</x-page-doc>

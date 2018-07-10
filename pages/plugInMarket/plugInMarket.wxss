@@ -1,0 +1,29 @@
+/* pages/plugInMarket/plugInMarket.wxss */
+.plugInMarket{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.menu{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: 100;
+  white-space: nowrap;
+  background-color: #ffdd00;
+  height: 50px;
+  line-height: 50px;
+}
+.menu__item{
+  display: inline-block;
+  min-width:50px;
+  margin-left: 10px;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+}
+.menu__item--active{
+  color: red;
+  font-weight: bold;
+}

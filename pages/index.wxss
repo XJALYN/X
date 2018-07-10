@@ -1,1 +1,12 @@
 /* pages/index.wxss */
+.menu{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 50px;
+  align-items: center;
+}
+.menu__item{
+  text-decoration: underline;
+
+}

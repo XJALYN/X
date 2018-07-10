@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "navigationBarBackgroundColor": "#ffdd00",
+  "usingComponents":{
+    "x-image":"/X/imageloader/index"
+  }
+}

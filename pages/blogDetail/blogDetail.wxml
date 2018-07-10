@@ -1,0 +1,15 @@
+<!--pages/blogDetail/blogDetail.wxml-->
+<view class="">
+  <view class="header">
+    <view class="title">{{title}}</view>
+    <view class="row">
+      <view class="author">{{author}}</view>
+      <view class="date">{{created_at}}</view>
+    </view>
+  </view>
+<view class="rich-text">
+   <rich-text nodes="{{article.content}}"></rich-text>
+</view>
+
+</view>
+

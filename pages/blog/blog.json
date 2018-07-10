@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "小程序技能提升",
+  "enablePullDownRefresh": true,
+  "usingComponents":{
+    "x-plane":"/X/plane/index",
+    "x-loadmore":"/X/loadmore/index"
+  }
+}

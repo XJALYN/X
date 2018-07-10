@@ -1,0 +1,17 @@
+<!--pages/plugInMarket/plugInMarket.wxml-->
+<view class="plugInMarket">
+   <scroll-view class="menu" scroll-x style="width: 100%" >
+   <block wx:for="{{menuList}}" wx:key="{{index}}">
+        <view id="x{{index}}" class="menu__item {{activeIndex==index?'menu__item--active':''}}" bindtap='bindSelectedMenu' data-value='{{item}}' data-index='{{index}}'>{{item.title}}</view>
+   </block>
+  </scroll-view>
+  <view style='height:50px;'></view>
+  <block wx:for="{{plugInList}}" wx:key="{{index}}">
+  <x-plane icon="{{item.cover.path!=null?item.cover.path:'https://ws3.sinaimg.cn/large/006tNc79gy1ft2bbf7j6pj3028028q2s.jpg'}}" title="{{item.title}}" desc="{{item.describe}}" date="{{item.created_at}}" ext="{{item.author}}" data-value="{{item}}" bindtap="bindPushToPlugIn"> </x-plane>
+  </block>
+
+  <x-error wx:if="{{plugInList.length==0&&loaded}}" title="暂无此类型的插件"></x-error>
+
+  <x-loadmore wx:if="{{plugInList.length >= limit}}" loading="{{!noMore}}"></x-loadmore>
+   
+</view>

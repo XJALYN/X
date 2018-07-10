@@ -2,6 +2,11 @@
   "pages": [
     
     "pages/index",
+    "pages/text/text",
+    "pages/plugIn/plugIn",
+    "pages/plugInMarket/plugInMarket",
+    "pages/blog/blog",
+    "pages/blogDetail/blogDetail",
     "pages/checkboxGroup/checkboxGroup",
     "pages/uploader/uploader",
     "pages/titleTip/titleTip",
@@ -9,7 +14,6 @@
     "pages/cell/cell",
     "pages/circleProgress/circleProgress",
     "pages/weather/weather",
-    
     "pages/gradualNumber/gradualNumber",
     "pages/menuImage/menuImage",
     "pages/multingKeyboard/multingKeyboard",

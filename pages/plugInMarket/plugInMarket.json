@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "",
+  "enablePullDownRefresh": false,
+  "navigationBarBackgroundColor": "#ffdd00",
+  "usingComponents":{
+    "x-plane":"/X/plane/index",
+    "x-error":"/X/error/index",
+    "x-loadmore":"/X/loadmore/index"
+  }
+}

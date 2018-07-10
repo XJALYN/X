@@ -27,6 +27,10 @@ Component({
     ext: {
       type: String,
       value:''
+    },
+    showTopLine:{
+      type:Boolean,
+      value:true
     }
   },
 

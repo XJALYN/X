@@ -1,0 +1,58 @@
+/* pages/plugIn/plugIn.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.header{
+  padding: 5px 20px;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: column;
+  background-color: #ffdd00;
+  align-items: center;
+}
+.icon{
+  width: 60px;
+  height: 60px;
+  border:1px white solid;
+}
+.title{
+  margin-top: 10px;
+  font-size: 17px;
+  color: black;
+  text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
+}
+.appId{
+
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: rgba(150,150,150);
+}
+.course{
+  color: white;
+  text-decoration: underline;
+  font-size:12px;
+}
+.group-title{
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-left: 5px;
+  border-left: 5px solid #ffdd00;
+  height: 20px;
+  line-height: 20px;
+}
+
+.value{
+  margin-top: 10px;
+  margin-left: 15px;
+  font-size: 15px;
+  color: rgb(120,120,120);
+}
+
+.display{
+  margin-left: 30rpx;
+  margin-top: 20px;
+  width: calc(100% - 60rpx);
+}

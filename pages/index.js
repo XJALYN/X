@@ -51,7 +51,8 @@ Page({
      
      { name: "weather", url:"/pages/weather/weather",icon:"/images/weather.png"},
      { name: "radioGroup", url: "/pages/radioGroup/radioGroup", icon:"/images/radio.png"},
-     { name: "checkboxGroup", url:"/pages/checkboxGroup/checkboxGroup",icon:"/images/check.png"}
+     { name: "checkboxGroup", url:"/pages/checkboxGroup/checkboxGroup",icon:"/images/check.png"},
+     { name: "text", url: "/pages/text/text",icon:"/images/text.png"}
    ]
    
   },

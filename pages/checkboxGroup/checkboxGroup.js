@@ -6,16 +6,17 @@ Page({
    */
   data: {
     list:[
-      {name:"中国🇨🇳"},
-      { name: "美国🇺🇸" },
-      { name: "德国🇩🇪" },
-      { name: "日本🇯🇵" },
+      { name:"中国🇨🇳",count:100,checked:true,disable:true},
+      { name: "美国🇺🇸", count: 10, checked: true, disable: false },
+      { name: "德国🇩🇪", count: 10, checked: true  },
+      { name: "日本🇯🇵", count: 10, checked: false  },
       ],
     activeIndexs:[0],
     disableIndexs:[1],
+    limit:2,
     doc:{
       title:"checkboxGroup",
-      desc:"多选列表,支持投票选项限制"
+      desc:"多选列表,支持投票选项限制,支持选过不能再次选"
     }
   },
 
@@ -75,9 +76,19 @@ Page({
   
   },
   bindChange(e){
-    console.log(e)
+    var actives = e.detail.value
+    for(var i= 0;i < this.data.list.length;i++){
+      console.log(actives.indexOf(i+''))
+      this.data.list[i]["checked"] = actives.indexOf(i+'') > -1 ?  true : false
+    }
     this.setData({
-      activeIndexs:e.detail.value
+      list:this.data.list
     })
+    console.log(e.detail.value)
+    console.log(this.data.list)
+
+
+  
+   
   }
 })

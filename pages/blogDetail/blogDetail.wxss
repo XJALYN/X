@@ -1,0 +1,27 @@
+/* pages/blogDetail/blogDetail.wxss */
+.header{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.title{
+  margin-top: 20px;
+  font-size: 20px;
+}
+.row{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.author{
+  color: rgb(107,105,166);
+  font-size: 15px;
+}
+.date{
+  color: rgb(180,180,180);
+  margin-left: 20px;
+  font-size: 15px;
+}
+.rich-text{
+ margin: 20px 20px;
+}

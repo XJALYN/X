@@ -1,0 +1,8 @@
+<!--pages/blog/blog.wxml-->
+<view class="">
+  <block wx:for="{{list}}" wx:key="{{index}}">
+ <x-plane icon="{{item.cover}}" title="{{item.title}}" desc="{{item.description}}" date="{{item.created_at}}" ext="{{item.author}}"  data-value="{{item}}" bindtap="bindPushToBlogDetail" showTopLine="{{index==0?true:false}}"></x-plane>
+  </block>
+  <x-loadmore wx:if="{{limit<=list.length}}" loading="{{!noMore}}"></x-loadmore>
+ 
+</view>

@@ -11,7 +11,7 @@
   margin-top: 0;
 }
 
-.weui-panel:before {
+.weui-panel-before {
   top: 0;
   border-top: 1rpx solid #e5e5e5;
 }
@@ -81,7 +81,7 @@
 }
 
 .weui-media-box__desc {
-  color: #999;
+  color: rgb(120,120,120);
   font-size: 26rpx;
   line-height: 1.2;
   overflow: hidden;
@@ -96,7 +96,7 @@
   margin-top: 15px;
   padding-bottom: 5px;
   font-size: 26rpx;
-  color: #cecece;
+  color: rgb(180,180,180);
   line-height: 1em;
   list-style: none;
   overflow: hidden;
@@ -109,7 +109,7 @@
 
 .weui-media-box__info__meta_extra {
   padding-left: 1em;
-  border-left: 1px solid #cecece;
+  border-left: 1px solid rgb(180,180,180);
 }
 
 .weui-media-box__title_in-text {

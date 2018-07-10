@@ -12,6 +12,16 @@
 .x-icon-checkbox{
   margin-left: 13px;
 }
+.x-cell__icon{
+  margin-left: 10px;
+  width: 26px;
+  height: 26px;
+}
 .x-cell__title{
   margin-left: 10px;
+}
+.x-cell__count{
+  margin-right: 15px;
+  font-size: 15px;
+  color: rgb(100,100,100);
 }

@@ -1,0 +1,26 @@
+/* X/text/text.wxss */
+.text-container{
+  width: 100%;
+}
+
+.text{
+  display: block;
+  word-wrap:break-word;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  font-size: 15px;
+}
+
+.all-read{
+  display: inline-block;
+  min-width: 60px;
+  white-space: nowrap;
+  background: white;
+  font-size: 15px;
+  color: rgb(0,19,200);
+}
+
+.all-read::before{
+  content: "...";
+  color:black;
+}
