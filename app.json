@@ -2,6 +2,9 @@
   "pages": [
     
     "pages/index",
+    "pages/web/web",
+    "pages/textare/textare",
+    "pages/news/news",
     "pages/text/text",
     "pages/plugIn/plugIn",
     "pages/plugInMarket/plugInMarket",

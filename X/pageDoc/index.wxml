@@ -3,4 +3,5 @@
   <text class="title">{{title}}</text>
   <text class="desc">{{desc}}</text>
   <slot></slot>
+  <view wx:if="{{showReward}}" class="jump" bindtap='bindPushToGeiZan'>老板,小礼物走一波~</view>
 </view>

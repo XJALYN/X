@@ -1,0 +1,67 @@
+/* X/news/index.wxss */
+.news{
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.news:active{
+  background-color: rgb(230,230,230);
+}
+
+.content__left{
+  float: left;
+  width: calc(100% - 120px);
+}
+.content__footer{
+  font-size: 12px;
+  color: rgb(150,150,150);
+}
+.content__footer__date{
+  float: left;
+  color: rgb(180,180,180);
+}
+.content__footer__author{
+  float: left;
+  margin-left: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+  background-color: rgb(250,250,250);
+  
+}
+.content__src{
+float: right;
+width: 90px;
+height: 70px;
+background: rgb(250,250,250);
+border-radius: 2px;
+}
+.content__title{
+  overflow:hidden; 
+text-overflow:ellipsis;
+display:-webkit-box; 
+-webkit-box-orient:vertical;
+-webkit-line-clamp:2; 
+}
+
+.content{
+  padding-top: 10px;
+  margin-bottom: 10px;
+  display:block;
+  
+}
+.content:before, .content:after {
+  content: "";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+
+.line{
+  background-color: rgb(240,240,240);
+  height: 1px;
+  margin:auto 0px;
+  display: block;
+}

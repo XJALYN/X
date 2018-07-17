@@ -1,0 +1,11 @@
+<!--X/textare/index.wxml-->
+<view class="textare">
+  <textarea class="text" 
+            bindinput='bindInput'
+             maxlength='{{max}}' 
+             placeholder='{{placeholder}}'
+             style='font-size:{{fontSize}}px;color:{{color}}' 
+             bindconfirm='bindConfirm' 
+             bindblur='bindBlur'></textarea>
+  <label class="limit" >{{current}}/{{max}}</label>
+</view>

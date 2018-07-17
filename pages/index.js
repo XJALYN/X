@@ -9,7 +9,6 @@ Page({
       title:"X",
       desc:"X组件提供了丰富的小程序开发组件,能够帮助开发更快的开发小程序,下面是各个组件的演示"
     },
-
    list:[
      { name: "about", url: "/pages/about/about", icon:"/images/about.png"},
      { name: "audio", url: "/pages/audio/audio", icon: "/images/audio.png"},
@@ -42,17 +41,16 @@ Page({
      { name: "steps", url: "/pages/steps/steps", icon: "/images/steps.png"},
      { name: "switch", url: "/pages/switch/switch", icon: "/images/switch.png"},
      { name: "uploader", url: "/pages/uploader/uploader", icon:"/images/uploader.png"},
-     
      { name: "popup", url: "/pages/popup/popup", icon: "/images/popup.png"},
-    
      { name: "multingKeyboard", url:"/pages/multingKeyboard/multingKeyboard",icon:"/images/keyboard.png"},
      { name: "menuImage", url: "/pages/menuImage/menuImage", icon:"/images/menu.png"},
      { name: "gradualNumber", url: "/pages/gradualNumber/gradualNumber", icon:"/images/gradual_number.png"},
-     
      { name: "weather", url:"/pages/weather/weather",icon:"/images/weather.png"},
      { name: "radioGroup", url: "/pages/radioGroup/radioGroup", icon:"/images/radio.png"},
      { name: "checkboxGroup", url:"/pages/checkboxGroup/checkboxGroup",icon:"/images/check.png"},
-     { name: "text", url: "/pages/text/text",icon:"/images/text.png"}
+     { name: "text", url: "/pages/text/text",icon:"/images/text.png"},
+     { name: "news", url: "/pages/news/news", icon:"/images/news.png"},
+     { name: "textare", url: "/pages/textare/textare",icon:"/images/textare.png"}
    ]
    
   },

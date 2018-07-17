@@ -7,7 +7,12 @@ module.exports = {
       created_at:this.data.created_at,
       author:this.data.author
     }
-    wx.router.pushToBlogDetail(params)
+    if (this.data.wx_article_id != '' && this.data.wx_article_id != null) {
+      wx.router.pushToWeb({ "url": "https://mp.weixin.qq.com/s/" + this.data.wx_article_id })
+    } else {
+      wx.router.pushToBlogDetail(params)
+    }
+   
   }
   
 }

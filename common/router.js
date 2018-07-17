@@ -2,7 +2,8 @@
 var path = {
   blog:"/pages/blog/blog",
   blogDetail: "/pages/blogDetail/blogDetail",
-  plugIn:"/pages/plugIn/plugIn"
+  plugIn:"/pages/plugIn/plugIn",
+  web:"/pages/web/web"
 }
 wx.router  = {
   // 将json 编码成 urlEncoded 格式为key1=value1&key2=value2
@@ -41,6 +42,9 @@ wx.router  = {
   },
   pushToPlugIn(params){
     this.pushToPath(path.plugIn, params)
+  },
+  pushToWeb(params){
+    this.pushToPath(path.web,params)
   }
   
 }

@@ -4,7 +4,7 @@
     <image class="icon" src="{{cover!=''?cover:'https://ws3.sinaimg.cn/large/006tNc79gy1ft2bbf7j6pj3028028q2s.jpg'}}"></image>
     <view class="title">{{title}}</view>
       <view class="appId">{{appId}}</view>
-      <view class="course" bindtap='bindPushToBlogDetail' wx:if="{{course_id != null&&course_id != ''}}">查看使用教程</view>
+      <view class="course" bindtap='bindPushToBlogDetail' wx:if="{{course_id != null&&course_id != ''||wx_article_id != ''&&wx_article_id !=null}}">查看使用教程</view>
   </view>
 
   <view class="group-title">最新版本号</view>

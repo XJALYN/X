@@ -21,7 +21,8 @@ var options = {
     appId: "",
     version: "",
     content_group_id:"",
-    course_id:""
+    course_id:"",
+    wx_article_id:""
   },
 
   /**
@@ -38,6 +39,7 @@ var options = {
       contact: options.contact,
       appId:options.app_id,
       version:options.version,
+      wx_article_id: options.wx_article_id,
       displayImage:options.display_image,
       content_group_id: options.content_group_id != null ? options.content_group_id:'',
       course_id: options.course_id != null ? options.course_id:''

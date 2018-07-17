@@ -1,0 +1,19 @@
+/* X/textare/index.wxss */
+.text{
+  height: 80px;
+}
+.textare{
+  background-color: rgb(252,252,252);
+  border:1px solid rgb(220,220,220);
+  padding:10px 10px;
+  display: block;
+}
+.limit{
+  text-align: right;
+
+  height: 26px;
+  line-height: 26px;
+  color: rgb(150,150,150);
+  display: block;
+  padding-right: 10px;
+}

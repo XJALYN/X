@@ -1,6 +1,6 @@
 <!--pages/index.wxml-->
 <view>
-<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}"></x-page-doc>
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}" showReward="{{false}}"></x-page-doc>
 <view class="menu">
   <navigator url='/pages/blog/blog'>
      <view class="menu__item">小程序精讲教程</view>

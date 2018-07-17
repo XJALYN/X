@@ -1,0 +1,5 @@
+/* pages/textare/textare.wxss */
+.btn{
+  margin-top: 30px;
+  width: calc(100% - 60rpx);
+}

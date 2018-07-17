@@ -1,0 +1,16 @@
+<!--X/news/index.wxml-->
+<view class="news">
+<view class="content">
+  <view class="content__left">
+ <view class="content__title">{{title}}</view>
+ <view class="content__footer">
+    <view class="content__footer__date">{{date}}</view>
+    <view class="content__footer__author">{{author}}</view>
+ </view>
+  
+ </view>
+ <image class="content__src" src="{{src}}"></image> 
+</view>
+
+ <view class="line"></view>
+</view>

@@ -1,0 +1,5 @@
+<!--pages/textare/textare.wxml-->
+<view>
+  <x-textare bindinput="bindInput"></x-textare>
+  <button type='primary' class="btn" bindtap='bindSubmit'>提交</button>
+</view>
