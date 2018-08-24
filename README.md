@@ -67,14 +67,15 @@
 * gradualNumber 数子渐变增长组件
 * circleProgress 环形进度条组件
 * weathher 天气小组件
+* refresh 自定义下拉刷新组件
+* chart 图表组件
 
 持续更新,打造全能实用小组件
 
-<<<<<<< HEAD
+
 交流群 783921168 
 
-=======
->>>>>>> develop
+
 
 
 
