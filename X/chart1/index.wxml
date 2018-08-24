@@ -1,0 +1,43 @@
+<!--X/chart1/index.wxml-->
+<view class="chart">
+
+  <!-- 第一层坐标 -->
+  <view class="char-layer1">
+    <view class="chart-layer__num-list">
+      <block wx:for="{{scaleList}}" wx:key="{{index}}">
+       <view class="chart-layer__num-list__number" >{{item}}</view>
+      </block>
+    </view>
+
+    <view class="chart-layer__line-list">
+      <view class="chart-layer__num-list__line" wx:for="{{scaleList}}" wx:key="{{index}}"></view>
+    </view> 
+  </view>
+
+  <!-- 第二层 -->
+  <scroll-view class="char-layer2" style='position: absolute;top: 50rpx; bottom: 50rpx; left: 134rpx;right:54rpx;' scroll-x scroll-into-view="id{{list.length-1}}">
+
+    <block wx:for="{{list}}" wx:key="{{index}}">
+     <view class="chart-layer2-item-container" id="id{{index}}">
+      <view class="chart-layer2-item">
+      <view class="chart-layer2-item__date" style='color:{{item.color}}'>{{item.name}}</view>
+      <view class="chart-layer2-itme__bar-container">
+         <view class="chart-layer2-itme__bar-style1" wx:for="{{item.values}}" wx:key="{{index}}">
+           <view class="chart-layer2-itme__bar-style1__bar" style='height:{{item.value*factor}}rpx;background-color:{{item.color}}' wx:if="{{item.value!=0}}"></view>
+           <view class="chart-layer2-itme__bar-style1__value" style='color:{{item.color}}' wx:if="{{item.value!=0}}">¥{{item.value}}</view>
+         </view>
+      </view>
+      </view>
+    </view>
+    </block>
+  </scroll-view>
+
+    <view class="explaine">
+    <view class="explaine-item" wx:for="{{types}}" wx:key="{{index}}">
+      <view class="explaine-item__flag-block" style='background:{{item.color}}'></view>
+      <view class="explaine-item__flag-title">{{item.title}}</view>
+    </view>
+  </view> 
+  
+
+</view>

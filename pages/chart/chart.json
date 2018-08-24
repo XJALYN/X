@@ -1,0 +1,7 @@
+{
+  "usingComponents":{
+    "x-chart":"/X/chart/index",
+    "x-chart-one": "/X/chart1/index",
+    "x-page-doc": "/X/pageDoc/index"
+  }
+}

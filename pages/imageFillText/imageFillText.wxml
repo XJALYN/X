@@ -1,0 +1,7 @@
+<!--pages/imageFillText/imageFillText.wxml-->
+<view>
+
+  <canvas canvas-id='text-canvas' style='width:100vw;height:100vh'>
+  </canvas>
+  
+</view>

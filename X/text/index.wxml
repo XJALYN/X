@@ -1,4 +1,4 @@
 <!--X/text/text.wxml-->
 <view class="text-container">
- <view class="text" style='color:{{color}}; font-size:{{font-size}}'>{{showAll?value:summary}}<view class="all-read"  bindtap='bindChangeUnfold' style='color:{{foldColor}}; font-size:{{font-size}}'>{{showAll?"收起":"展开全部"}}</view></view>
+ <view class="text" style='color:{{color}}; font-size:{{font-size}}'>{{showAll?value:summary}}<view wx:if="{{showFold}}" class="all-read"  bindtap='bindChangeUnfold' style='color:{{foldColor}}; font-size:{{font-size}}'>{{showAll?"收起":"展开全部"}}</view></view>
 </view>

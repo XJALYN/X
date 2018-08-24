@@ -1,0 +1,11 @@
+/* pages/test/test.wxss */
+.page{
+  counter-increment:number;
+}
+.text{
+  counter-reset:number 2;
+  
+}
+.text::before{
+  content:"第"counter(number,lower-roman)"项、";
+}

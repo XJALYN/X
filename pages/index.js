@@ -50,7 +50,9 @@ Page({
      { name: "checkboxGroup", url:"/pages/checkboxGroup/checkboxGroup",icon:"/images/check.png"},
      { name: "text", url: "/pages/text/text",icon:"/images/text.png"},
      { name: "news", url: "/pages/news/news", icon:"/images/news.png"},
-     { name: "textare", url: "/pages/textare/textare",icon:"/images/textare.png"}
+     { name: "textare", url: "/pages/textare/textare",icon:"/images/textare.png"},
+     { name: "chart", url: "/pages/chart/chart", icon: "/images/chart.png"},
+     { name: "refresh", url: "/pages/refresh/refresh", icon:"/images/refresh.png"}
    ]
    
   },

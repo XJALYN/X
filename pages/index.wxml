@@ -5,6 +5,7 @@
   <navigator url='/pages/blog/blog'>
      <view class="menu__item">小程序精讲教程</view>
    </navigator>  
+   <navigator class="reward" app-id="wx18a2ac992306a5a4" target="miniProgram" path="pages/apps/largess/detail?id=aQOaqQPzE6U%3D">赞赏</navigator>
   <navigator url="/pages/plugInMarket/plugInMarket">
      <view class="menu__item">小程序插件市场</view>
   </navigator> 

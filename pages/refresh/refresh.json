@@ -1,0 +1,8 @@
+{
+  "enablePullDownRefresh":true,
+  
+  "usingComponents":{
+    "x-refresh":"/X/refresh/index",
+    "x-page-doc": "/X/pageDoc/index"
+  }
+}

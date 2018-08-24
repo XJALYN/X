@@ -1,0 +1,6 @@
+<!--X/refresh/index.wxml-->
+
+<cover-view class="refresh">
+  <cover-image  src="{{displayImage}}">
+  </cover-image>
+</cover-view>

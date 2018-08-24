@@ -40,6 +40,10 @@ Component({
     preview:{
       type: Boolean,
       value: false
+    },
+    previewImages:{
+      type:Array,
+      value:[]
     }
   },
 
@@ -68,8 +72,10 @@ Component({
       })
     },
     bindTapPreview(e){
+      this.data.previewImages.length == 0 &&(this.data.previewImages = [this.data.src])
        wx.previewImage({
-         urls: [this.data.src],
+         current:this.data.src,
+         urls: this.data.previewImages,
        })
     },
     bindlongtapSave(e){

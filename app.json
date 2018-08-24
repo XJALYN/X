@@ -1,7 +1,12 @@
 {
   "pages": [
-    
     "pages/index",
+    "pages/test/test",
+   
+    "pages/refresh/refresh",
+    
+    "pages/imageFillText/imageFillText",
+    "pages/chart/chart",
     "pages/web/web",
     "pages/textare/textare",
     "pages/news/news",

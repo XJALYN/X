@@ -1,0 +1,7 @@
+<!--pages/refresh/refresh.wxml-->
+<x-refresh loading="{{loading}}" wx:if="{{selectedIndex==1}}"></x-refresh>
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+
+   <view class="btn {{selectedIndex==0? 'btn--active':''}}" data-index='0' bindtap='bindSelected'>使用系统的</view>
+   <view class="btn {{selectedIndex==1? 'btn--active':''}}" data-index='1' bindtap='bindSelected'>使用自定义的</view>
+</x-page-doc>

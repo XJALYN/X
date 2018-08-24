@@ -1,0 +1,7 @@
+<!--pages/chart/chart.wxml-->
+<x-page-doc title="{{doc.title}}" desc="{{doc.desc}}">
+ <x-chart  list="{{premiumList}}" scale="{{premiumMaxScale}}" types="{{premiumTypes}}" ></x-chart>
+ <x-chart-one list="{{premiumList}}" scale="{{premiumMaxScale}}" types="{{premiumTypes}}"> </x-chart-one>
+
+ <x-chart-one list="{{incomeList}}" scale="{{premiumMaxScale}}" types="{{incomeTypes}}"> </x-chart-one>
+</x-page-doc>

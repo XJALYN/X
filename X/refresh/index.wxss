@@ -1,0 +1,11 @@
+/* X/refresh/index.wxss */
+
+.refresh{
+  text-transform: capitalize;
+  margin-top: -50px;
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  text-align: center;
+  margin-left: calc(50% - 50rpx);
+}

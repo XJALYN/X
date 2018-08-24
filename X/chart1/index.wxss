@@ -1,0 +1,136 @@
+/* X/chart1/index.wxss */
+.chart{
+  width:100%;
+  height: 407rpx;
+  position: relative;
+}
+
+.char-layer1{
+  position: absolute;
+  top: 50rpx;
+  bottom: 83rpx;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  padding-left: 45rpx;
+  padding-right: 54rpx;
+ 
+}
+.chart-layer__num-list{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   color: #D3D3D3;
+   font-size: 22rpx;
+   justify-content: space-between;
+}
+.chart-layer__line-list{
+
+  padding-top: 14.5rpx;
+  padding-bottom: 14.5rpx;
+  margin-left: 13rpx;
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.chart-layer__num-list__line{
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+}
+
+
+.explaine{
+
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30rpx;
+}
+
+.explaine-item{
+  display: flex;
+  align-items: center;
+   margin-left:20rpx;
+  margin-right:20rpx;
+}
+
+.explaine-item__flag-block{
+  width: 16rpx;
+  height: 16rpx;
+  align-items: center;
+
+}
+
+.explaine-item__flag-title{
+  margin-left: 10rpx;
+  font-size: 22rpx;
+  color: #6D6D6D;
+}
+
+.char-layer2{
+  z-index: 2;
+  white-space: nowrap;
+  position: absolute;
+  top: 50rpx; 
+  bottom: 50rpx; 
+  left: 134rpx;
+  right:54rpx;
+  width: calc(100% - 134rpx - 54rpx);
+}
+.chart-layer2-item-container{
+  display: inline-block;
+  width: calc(33.33333333%);
+  height: 100%;
+
+}
+.chart-layer2-item{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+
+}
+.chart-layer2-itme__bar-container{
+  display: flex;
+  justify-content: center;
+  height: calc(100% - 50rpx);
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 13rpx;
+}
+
+
+.chart-layer2-itme__bar-style1{
+  width: 40rpx;
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  margin-right: 10rpx;
+  margin-left:  10rpx;
+}
+
+.chart-layer2-itme__bar-style1__bar{
+  width: 40rpx;
+  height: 100%;
+}
+.chart-layer2-itme__bar-style1__value{
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  font-size: 22rpx;
+  transform: rotateZ(-30deg);
+}
+
+
+
+.chart-layer2-item__date{
+  color: #6D6D6D;
+  font-size: 22rpx;
+}

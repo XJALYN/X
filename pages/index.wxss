@@ -10,3 +10,16 @@
   text-decoration: underline;
 
 }
+.reward{
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  /* background-color: red; */
+  background: linear-gradient(top,rgb(222,165,0),rgb(233,237,0));
+  background: -moz-linear-gradient(top,rgb(222,165,0),rgb(233,237,0));
+  background: -webkit-linear-gradient(top,rgb(222,165,0),rgb(233,237,0));
+  color: red;
+  line-height: 60px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}

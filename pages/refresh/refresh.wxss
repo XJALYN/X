@@ -1,0 +1,13 @@
+/* pages/refresh/refresh.wxss */
+.btn{
+  margin-top: 30px;
+  width: calc(100% - 60px);
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  border: 1px solid lightgray;
+  margin-left: 30px;
+}
+.btn--active{
+  background-color: #1aad19;
+}

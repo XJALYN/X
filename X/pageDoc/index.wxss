@@ -6,6 +6,7 @@
   box-sizing: border-box;
   position: relative;
 }
+
 .title{
   margin-top: 10px;
   margin-left: 10px;

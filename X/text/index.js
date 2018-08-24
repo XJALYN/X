@@ -14,7 +14,8 @@ Component({
        observer: function (newValue, oldValue) {
          var summary = newValue.substr(0, this.data.summaryMax)
          this.setData({
-           summary
+           summary,
+           showFold: newValue.length > this.data.summaryMax
          })
        }
     },
@@ -47,7 +48,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-    summary:""
+    summary:"",
+    showFold:false
   },
 
   /**

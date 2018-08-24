@@ -1,0 +1,17 @@
+<!--X/chart/chart.wxml-->
+<view class="chart">
+  <canvas canvas-id="myCanvas"
+          style='height:{{chartHeight}}px;width:100%;'
+          bindtouchstart="start"
+          bindtouchmove="move"
+          bindtouchend="end"  wx:if="{{showChart}}" id="canvas"/>
+         
+  <image  class="chart-generate-image" style='max-height:{{chartHeight}}px;width:100%;height:{{chartHeight}}px' src="{{maskImageUrl}}" mode='widthFix'>  </image>  
+  
+  <view class="explaine">
+    <view class="explaine-item" wx:for="{{types}}" wx:key="{{index}}">
+      <view class="explaine-item__flag-block" style='background:{{item.color}}'></view>
+      <view class="explaine-item__flag-title">{{item.title}}</view>
+    </view>
+  </view>        
+</view>

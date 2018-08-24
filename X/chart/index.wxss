@@ -1,0 +1,46 @@
+/* X/chart/chart.wxss */
+
+.chart{
+  margin-top: 50rpx;
+  width:100%;
+  box-sizing: border-box;
+  height: 420rpx;
+  position: relative;
+  
+}
+.chart-generate-image{
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+
+}
+
+.explaine{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60rpx;
+}
+
+.explaine-item{
+  display: flex;
+  align-items: center;
+}
+
+.explaine-item__flag-block{
+  width: 16rpx;
+  height: 16rpx;
+  margin-left:40rpx;
+  align-items: center;
+
+}
+
+.explaine-item__flag-title{
+  margin-left: 10rpx;
+  font-size: 22rpx;
+  color: #6D6D6D;
+}

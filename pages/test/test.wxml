@@ -1,0 +1,6 @@
+<!--pages/test/test.wxml-->
+<view class="page">
+<!-- text-overflow:ellipsis;overflow: hidden; -->
+<view style="width:50px;height:20px;text-overflow:ellipsis;overflow: hidden; ">123131d的但是水电费dd23123</view>
+
+</view>

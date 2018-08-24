@@ -99,7 +99,7 @@ Component({
             reject(err)
           }
         })
-       wx.canIUse("onProgressUpdate")&&uploadTask.onProgressUpdate((res) => {
+       uploadTask.onProgressUpdate((res) => {
          this.setData({
            progress:res.progress
          })
