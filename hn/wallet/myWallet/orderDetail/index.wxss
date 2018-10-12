@@ -1,0 +1,229 @@
+.order-detail-bg{
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+   z-index: 10;
+}
+
+.order-detail-mask{
+  background-color: rgba(0,0,0,0);
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 300px;
+}
+
+.order-detail{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background: white;
+ 
+}
+
+.order-detail__header{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.order-detail__header__flag{
+  margin-left: 44rpx;
+  padding: 4px 8rpx;
+  background-color: #797C8B;
+  font-size: 22rpx;
+  border-radius: 8rpx;
+  color: white;
+}
+
+.order-detail__header__order-title{
+  color: #333333;
+  margin-left: 10rpx;
+  font-size: 28rpx;
+}
+.order-detail__header__status{
+  margin-right: 40rpx;
+  color: #6A6A6A;
+  font-size: 28rpx;
+}
+.order-detail__header__line{
+  margin-left: 14rpx;
+  margin-right: 14rpx;
+  height: 2rpx;
+  width: calc(100% - 28rpx);
+  background: #EEEEEE;
+}
+.order-detail__section1{
+  margin-top: 30rpx;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.order-detail__section1__icon{
+  margin-left: 62rpx;
+  width: 20rpx;
+  height: 20rpx;
+}
+.order-detail__section1__title{
+  margin-left: 28rpx;
+  color: #6D6D6D;
+  font-size: 28rpx;
+}
+.order-detail__section2{
+  padding-top: 4rpx;
+  width: 100%;
+  display: flex;
+  padding-bottom: 30rpx;
+}
+.order-detail__section2__left{
+  margin-left: 70rpx;
+  height: inherit;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20rpx;
+  padding-bottom: 10rpx;
+  position: relative;
+
+}
+.order-detail__section2__left__dot{
+  width: 18rpx;
+  height: 18rpx;
+  border-radius: 9rpx;
+  background-color: #DDDDDD;
+}
+.order-detail__section2__left__line{
+  background-color: #DDDDDD;
+  width:4rpx;
+  flex:1;
+  position: relative;
+}
+.order-detail__section2__left__line::after{
+  position: absolute;
+  left: -6rpx;
+  content: '';
+  display: block;
+  height: 16rpx;
+  width: 16rpx;
+  border-radius: 8rpx;
+  background: #DDDDDD;
+}
+
+.order-detail__section2__left__line::before{
+  position: absolute;
+  left: -6rpx;
+  content: '';
+  display: block;
+  height: 16rpx;
+  width: 16rpx;
+  border-radius: 8rpx;
+  background: #DDDDDD;
+   bottom: 0;
+}
+
+.order-detail__section2__left__line-half{
+  position: absolute;
+  top: 20rpx;
+  background: #43bfa3;
+  width:4rpx;
+  height: 50%;
+  /* bottom: calc(50%); */
+ 
+}
+.order-detail__section2__left__line-half__anchor{
+  display: block;
+  position: absolute;
+  width: 50rpx;
+  height: 50rpx;
+  bottom: 0rpx;
+  left: -23rpx;
+}
+
+.order-detail__section2__left__line-half::before{
+  position: absolute;
+  left: -6rpx;
+  content: '';
+  display: block;
+  height: 16rpx;
+  width: 16rpx;
+  border-radius: 8rpx;
+  background: #43bfa3;
+}
+
+
+.order-detail__section2__left__line--active{
+  background: #43bfa3;
+  width:4rpx;
+  flex:1;
+  position: relative;
+}
+.order-detail__section2__left__line--active::after{
+  position: absolute;
+  left: -6rpx;
+  content: '';
+  display: block;
+  height: 16rpx;
+  width: 16rpx;
+  border-radius: 8rpx;
+  background: #43bfa3;
+}
+
+.order-detail__section2__left__line--active::before{
+  position: absolute;
+  left: -6rpx;
+  content: '';
+  display: block;
+  height: 16rpx;
+  width: 16rpx;
+  border-radius: 8rpx;
+  background: #43bfa3;
+   bottom: 0;
+}
+
+
+.order-detail__section2__right{
+  margin-left: 34rpx;
+   flex:1;
+   margin-right: 40rpx;
+   display: flex;
+   flex-direction: column;
+}
+.order-detail__section2__right__title1{
+  margin-top: 10rpx;
+  color: #333333;
+  font-size: 28rpx;
+  text-align: left;
+}
+.order-detail__section2__right__title2{
+  margin-top: 10rpx;
+  color: #6A6A6A;
+  font-size: 28rpx;
+  text-align: left;
+  line-height: 40rpx;
+  height: 40rpx;
+}
+.order-detail__section2__right__cell{
+  margin-top: 10rpx;
+  display: flex;
+
+  height: 20px;
+  align-items: center;
+}
+.order-detail__section2__right__cell__title{
+  color: #6A6A6A;
+  font-size: 28rpx;
+  text-align: left;
+
+    line-height: 38rpx;
+  height: 38rpx;
+}
+.order-detail__section2__right__cell__icon{
+  margin-left: 10rpx;
+  width: 30rpx;
+  height: 30rpx;
+
+}

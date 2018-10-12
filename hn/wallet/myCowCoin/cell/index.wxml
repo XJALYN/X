@@ -1,0 +1,15 @@
+<template name="billCell">
+
+  <view class="bill-cell">
+     <view class="bill-cell__left">
+       <view class="bill-cell__carnum">车牌号码: 皖B555555</view>
+       <view class="bill-cell__time">创建车辆时间: 2018-06-30 23:30:53</view>
+     </view>
+
+     <view class="bill-cell__right">
+       <view class="bill-cell__num">+1个</view>
+       <image class="bill-cell__icon"></image>
+     </view>
+
+  </view>
+</template>

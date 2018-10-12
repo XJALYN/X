@@ -1,0 +1,11 @@
+/* hn/wallet/myCowCoin/myCowCoin.wxss */
+@import "./header/index";
+@import "./menu/index";
+@import "./cell/index";
+
+
+
+
+.my-cow-coin{
+  background-color: #F7F7F7;
+}

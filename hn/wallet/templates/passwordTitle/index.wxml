@@ -1,0 +1,6 @@
+<template name="passwordTitle">
+  <view class="password-title">
+    <view class="password-title__name">{{title}}</view>
+    <view class="passord-title__desc">{{desc}}</view>
+  </view>
+</template>

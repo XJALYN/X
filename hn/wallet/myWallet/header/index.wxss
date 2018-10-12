@@ -1,0 +1,43 @@
+.header{
+  padding-top: 30rpx;
+  background: #333333;
+  min-height: 260rpx;
+  box-sizing: border-box;
+  padding-left: 52rpx;
+  padding-right: 30rpx;
+  width: 100%;
+}
+.header__tip{
+   color: #6D6D6D;
+   font-size: 28rpx;
+   line-height: 40rpx;
+}
+.header__momey-container{
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  height: 93rpx;
+}
+.header__unit{
+  margin-top: 25rpx;
+  margin-bottom: 5rpx;
+  font-size: 48rpx;
+  color: white;
+}
+.header__momey{
+  margin-left: 10rpx;
+  font-size: 72rpx;
+  color: white;
+  flex: 1;
+}
+.header__arrow{
+ width: 20rpx;
+ height: 20rpx;
+ background: white;
+}
+.header__momey-hint{
+  margin-top: 10rpx;
+  color: #FFFFFF;
+  font-size: 24rpx;
+  
+}

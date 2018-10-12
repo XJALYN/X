@@ -1,0 +1,17 @@
+.password-title{
+  margin-top: 118rpx;
+  margin-bottom: 80rpx;
+   color: #333333;
+}
+
+.password-title__name{
+  font-size: 48rpx;
+  text-align: center;
+  width: 100%;
+}
+
+.passord-title__desc{
+ font-size: 26rpx;
+ text-align: center;
+ width: 100%;
+}

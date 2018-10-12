@@ -1,0 +1,12 @@
+<!--hn/wallet/balance/balance.wxml-->
+<view>
+  <view class="header">
+    <view class="header-title">可提现余额</view>
+    <view class="header-balance">1002.5</view>
+    <view class="btn--withdraw">提现</view>
+  </view>
+
+  
+
+  <view class="top-alert">您有300元入账后可提现</view>
+</view>

@@ -1,0 +1,11 @@
+<template name="header">
+  <view class="header">
+     <view class="header__tip">账户余额(元)</view>
+     <view class="header__momey-container">
+       <view class="header__unit">¥</view>
+       <view class="header__momey">100.0</view>
+       <image class="header__arrow"></image>
+     </view>
+     <view class="header__momey-hint">(  您有 300 元待入账金额  )</view>
+  </view>
+</template>

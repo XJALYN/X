@@ -1,0 +1,66 @@
+.input-password{
+  position: fixed;
+  top: 100vh;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+}
+.input-password--show{
+  top: 0px;
+}
+
+.mask{
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.input-password__container{
+  position: absolute;
+  bottom: -890px;
+  left: 0px;
+  right: 0px;
+  height: 890rpx;
+  background: white;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  box-sizing: border-box;
+  transition: bottom ease-out 0.2s;
+}
+.input-password__container--show{
+  bottom: 0px;
+}
+
+.input-password__top{
+  margin-top: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.input-password__mid{
+  margin-top: 50rpx;
+}
+
+.input-password__top__title{
+  height: 53rpx;
+  line-height: 53rpx;
+  font-size: 38rpx;
+  flex:1;
+}
+.input-password__top__cancle{
+  width: 28rpx;
+  height: 28rpx;
+  background: black;
+}
+.input-password__money{
+  margin-top: 48rpx;
+  font-size: 28rpx;
+}
+.input-password__password--find{
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color: #F06F28;
+  text-align: right;
+  width: 100%;
+
+}

@@ -1,0 +1,42 @@
+.header{
+  padding-left: 50rpx;
+  padding-right: 50rpx;
+  box-sizing: border-box;
+  width: 100%;
+  background: white;
+  margin-top: 2px;
+  
+  box-shadow: 0 -2px 2px rgba(0,0,0,0.05);
+}
+.top-list{
+  padding-top: 62rpx;
+  display: flex;
+  align-items: center;
+}
+.top-list__icon{
+  width: 36rpx;
+  height: 36rpx;
+  background: black;
+}
+.top-list__title{
+  margin-left: 10rpx;
+  color: #999999;
+  font-size: 26rpx;
+}
+.mid-list{
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.mid-list__coin{
+  color: #333333;
+  font-size: 72rpx;
+  line-height: 100rpx;
+  height: 100rpx;
+}
+.mid-list__tip{
+  margin-top: 63rpx;
+  line-height: 37rpx;
+  color: #999999;
+  margin-bottom: 51rpx;
+}

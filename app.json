@@ -1,5 +1,16 @@
 {
   "pages": [
+    "hn/wallet/payPasswordVerificationCode/payPasswordVerificationCode",
+    "hn/wallet/payPasswordNew/payPasswordNew",
+    "hn/wallet/payPasswordSet/payPasswordSet",
+    "hn/wallet/payPasswordUpdate/payPasswordUpdate",
+    "hn/wallet/payPasswordConfirm/payPasswordConfirm",
+
+    "hn/wallet/withdraw/withdraw",
+    "hn/wallet/balance/balance",
+    "hn/wallet/myCowCoin/myCowCoin",
+    "hn/wallet/myWallet/myWallet",
+
     "pages/index",
     "pages/test/test",
    

@@ -1,0 +1,14 @@
+<template name="header">
+  <view class="header">
+    <view class="top-list">
+      <image class="top-list__icon"></image>
+      <view class="top-list__title">牛币总额</view>
+    </view>
+
+    <view class="mid-list">
+      <view class="mid-list__coin">200个</view>
+      <view style='flex:1'></view>
+      <view class="mid-list__tip">您有 30 个牛币待入账</view>
+    </view>
+  </view>
+</template>

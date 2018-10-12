@@ -1,0 +1,64 @@
+<template name="orderDetail">
+  <view class="order-detail-bg animated fadeIn}}" catchtap='bindHideOrderDetail'>
+
+    <!-- 头部 -->
+    <view class="order-detail animated slideInUp}}" catchtap='preventOrderContentEvent' catchtouchmove='preventOrderContentEvent'>
+      <view class="order-detail__header">
+        <view class="order-detail__header__flag">{{roleType==3?'货主':'车主'}}</view>
+        <view class="order-detail__header__order-title">订单号: {{orderNum}}</view>
+        <view style='flex:1'></view>
+
+      <view class="order-detail__header__status" wx:if="{{status==-1}}">已退款</view>
+      <view class="order-detail__header__status" wx:if="{{status==0}}">待支付</view>
+      <view class="order-detail__header__status" wx:if="{{status==2}}">待发车</view>
+      <view class="order-detail__header__status" wx:if="{{status==3}}">运输中</view>
+      <view class="order-detail__header__status" wx:if="{{status==4}}">已到达</view>
+      <view class="order-detail__header__status" wx:if="{{status==5}}">已收货</view>
+      </view>
+      <!-- 线 -->
+      <view class="order-detail__header__line"></view>
+     <!-- 内容 -->
+    <view class="order-detail__section1">
+      <image class="order-detail__section1__icon" src='/images/icon_timer.png'></image>
+      <view class="order-detail__section1__title">发车时间:{{deliveryDate}}</view>
+    </view>
+    <view class="order-detail__section2">
+      <view class="order-detail__section2__left">
+        <view class="order-detail__section2__left__line" wx:if="{{status==2||status==3||status==-1||status==0}}"></view>
+        <view class="order-detail__section2__left__line--active" wx:if="{{status==4||status==5}}"></view>
+        <view class="order-detail__section2__left__line-half" style='height:{{progress}}' wx:if="{{status==3}}">
+           <image class="order-detail__section2__left__line-half__anchor" src="../../images/icon_location.png"></image>
+        </view>
+       </view>
+
+      <view class="order-detail__section2__right">
+        <view class="order-detail__section2__right__title1">{{startPlaceInfo}}</view>
+        <view class="order-detail__section2__right__title2">发车编号: {{departNum}}</view>
+        <view class="order-detail__section2__right__title2">车牌号: {{carNum}}</view>
+
+        
+        <!-- 货主 车主可见此项 -->
+        <view class="order-detail__section2__right__cell" wx:if="{{roleType==1}}">
+         <view class="order-detail__section2__right__cell__title">货主: {{userName}} {{userMobile}}</view>
+         <image class="order-detail__section2__right__cell__icon" src="/images/icon_phone.png" catchtap='bindCallPhone' data-phone="{{userMobile}}"></image>
+        </view>
+
+       <!-- 车主 货主可见此项-->
+        <view class="order-detail__section2__right__cell" wx:if="{{roleType==3}}">
+         <view class="order-detail__section2__right__cell__title">车主: {{ownerName}} {{ownerMobile}}</view>
+         <image class="order-detail__section2__right__cell__icon" src="/images/icon_phone.png" catchtap='bindCallPhone' data-phone="{{ownerMobile}}"></image>
+        </view>
+
+        
+        <view class="order-detail__section2__right__title2">货物: {{goodName}}</view>
+         <view class="order-detail__section2__right__cell">
+         <!-- 司机 -->
+         <view class="order-detail__section2__right__cell__title" >司机: {{driverName}} {{driverMobile}}</view>
+         <image class="order-detail__section2__right__cell__icon" src="/images/icon_phone.png" catchtap='bindCallPhone' data-phone="{{driverMobile}}"></image>
+        </view>
+        <view class="order-detail__section2__right__title1">{{destinationInfo}}</view>
+      </view>
+    </view>
+    </view>
+  </view>
+</template>

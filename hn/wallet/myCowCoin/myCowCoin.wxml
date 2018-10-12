@@ -1,0 +1,18 @@
+<!--hn/wallet/myCowCoin/myCowCoin.wxml-->
+<import src="./header/index" />
+<import src="./menu/index" />
+<import src="./cell/index" />
+
+<view class="my-cow-coin">
+  <template is="header" />
+  <template is="menu" data="{{menuIndex}}"/>
+
+  <block wx:if="{{menuIndex==0}}">
+    <template is="billCell" wx:for="{{enterAccountList}}"/>
+  </block>
+
+   <block wx:if="{{menuIndex==1}}">
+     <template is="billCell" wx:for="{{unEnterAccountList}}"/>
+  </block>
+ 
+</view>

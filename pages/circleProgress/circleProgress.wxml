@@ -26,6 +26,14 @@
 </x-circle-progress>
 </view>
 
+<!-- 可以放置在swiper上面 -->
+<swiper>
+  <swiper-item style="background-color:red;display:flex;align-items:center;justify-content:center;">
+  <x-circle-progress progress="0.5" animated="true" radius="50" gradient="true" gradientStartColor="rgb(80,229,69)" gradientStopColor="rgb(255,209,46)">
+  <image style='width:100px;height:100px;border-radius:50%' src='http://pic30.photophoto.cn/20140119/0036036897536260_b.jpg'></image>
+</x-circle-progress>
+  </swiper-item>
+</swiper>
 
 
 </x-page-doc>

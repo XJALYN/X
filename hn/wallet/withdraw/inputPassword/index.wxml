@@ -1,0 +1,22 @@
+<template name="inputPassword">
+
+ <view class="input-password {{show?'input-password--show':''}}">
+
+   <view class="mask">
+   
+   </view>
+
+   <view class="input-password__container {{show?'input-password__container--show':''}}">
+    <view class="input-password__top">
+     <view class="input-password__top__title">输入密码</view>
+     <view class="input-password__top__cancle" bindtap='bindHideInputPassword'></view>
+   </view>
+   <view class="input-password__money">提现金额 1002.50元</view>
+   <view class="input-password__mid">
+        <x-mulSegmentInput bindfinish="bindPasswordInputConfirm" focus="{{show?true:false}}" value="{{password}}"></x-mulSegmentInput>
+   </view>
+   <view class="input-password__password--find">忘记密码?</view>
+   </view>
+ </view>
+
+</template>

@@ -38,7 +38,8 @@ App({
       }).bind(eslint, eslint2);
 
       console.log(boundGetName()); 
-     
     },
+
+ 
   
 });

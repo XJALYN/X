@@ -1,0 +1,17 @@
+
+<template name="wxCard">
+<movable-view class="wx-card-container" style='top:{{133*index}}px' direction="vertical" data-index="{{index}}" data-top='{{133*index}}' bindvtouchmove="bindTouchMoveCell" y="{{offsetY}}" damping="100" bindtouchend='bindTouchEnd' bindtouchstart='bindTouchStart' disabled="{{handleAnimated}}">
+  <view class="wx-card__header">
+   <image class="wx-card__header__icon" src="/images/icon_skfs_wechat_40.png"></image>
+   <view class="wx-card__header__title">微信收款</view>
+  </view>
+
+
+  <view class="wx-card__mid">
+    <view class="wx-card__mid__num1">{{cardNumFirst}}</view>
+    <view class="wx-card__mid__dot {{index==3?'wx-card__mid__dot-last':''}}" wx:for="{{[1,2,3,4]}}" wx:key="{{index}}"></view>
+    <view class="wx-card__mid__num2">{{cardNumLast}}</view>
+  </view>
+  <image class="wx-card__watermark" src="/images/icon_wxsk.png"></image>
+</movable-view>
+</template>

@@ -1,0 +1,134 @@
+/* hn/wallet/withdraw/withdraw.wxss */
+@import "./paymentList/index";
+@import "./inputPassword/index";
+
+.widthdraw{
+  padding-top: 20rpx;
+  background-color: #F7F7F7;
+  min-height: 100vh;
+  box-sizing: border-box;
+  
+}
+
+.card{
+  width: 100%;
+  display: flex;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  background: white;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.card-icon{
+  width: 36rpx;
+  height: 36rpx;
+  background: black;
+}
+
+.card-mid{
+  margin-left: 20rpx;
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  height: 120rpx;
+}
+
+.card-mid__name{
+  margin-top: 21rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  color: #333333;
+  font-size: 28rpx;
+}
+
+.card-mid__value{
+  margin-top: 5rpx;
+  color: #999999;
+  font-size: 24rpx;
+}
+.card__arrow{
+  width: 20rpx;
+  height: 20rpx;
+  background: black;
+}
+
+
+.mid-block{
+  margin-top: 20rpx;
+  width: 100%;
+  padding-left: 80rpx;
+  padding-right: 80rpx;
+  box-sizing: border-box;
+  height: 380rpx;
+  background: white;
+  padding-top:  50rpx;
+}
+
+.mid-block__title{
+  height: 37rpx;
+  line-height: 37rpx;
+  color: #333333;
+  font-size: 26rpx;
+}
+
+.mid-block__input-container{
+  margin-top: 40rpx;
+  display: flex;
+  align-items: center;
+}
+
+.mid-block__input-container__unit{
+ color: #333333;
+ font-size: 90rpx;
+ height: 96rpx;
+ line-height: 96rpx;
+}
+
+.mid-block__input-container__num{
+ color: #333333;
+ font-size: 90rpx;
+ margin-left: 20rpx;
+ height: 96rpx;
+ line-height: 96rpx;
+}
+
+
+.mid-block__line{
+  margin-top: 30rpx;
+  height: 1px;
+  width: calc(100%);
+  background-color: #DDDDDD;
+}
+
+
+.mid-block__bottom{
+  margin-top: 40rpx;
+  display: flex;
+  align-items: center;
+}
+
+
+.mid-block__bottom__tip{
+ color: #6D6D6D;
+ font-size: 26rpx;
+}
+
+
+.mid-block__bottom__btn--all{
+  margin-left: 20rpx;
+  color: #F06F28;
+  font-size: 26rpx;
+}
+
+
+.btn--withdraw{
+  margin-top: 30rpx;
+  width: calc(100% - 60rpx);
+  height: 90rpx;
+  color: white;
+  background: rgb(188,188,188);
+  margin-left: 30rpx;
+  line-height: 90rpx;
+  text-align: center;
+}

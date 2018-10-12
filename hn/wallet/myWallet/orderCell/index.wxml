@@ -1,0 +1,76 @@
+<template name="orderCell">
+  <view class="order-cell" bindtap="bindShowOrderDetail" data-order='{{order}}'>
+
+    <!-- 收款 -->
+    <block wx:if="{{type==0}}">
+
+      <view class="order-num">订单号: 18232319192</view>
+      <view class="order__mid">
+        <view class="order__mid__plate-number">
+         <text >车牌号码: 沪A88888 </text>
+        </view>
+      <view style='flex:1' class="order-flex"></view>
+      <view class="order__mid__price">+200.00</view>
+      <image class="order__mid__arrow" src="/images/icon_gary_arrowmore_20.png"></image>
+    </view>
+    <view class="order-date">
+    收款时间: 2018-08-06 12:00:00
+    </view>
+    <view class="order-line"></view>
+    </block>
+
+    <!-- 付款 -->
+   <block wx:if="{{type==1}}">
+      <view class="order-num">订单号: 18232319192</view>
+      <view class="order__mid">
+        <view class="order__mid__plate-number">
+         <text >车牌号码: 沪A88888 </text>
+        </view>
+      <view style='flex:1' class="order-flex"></view>
+      <view class="order__mid__price">+200.00</view>
+      <image class="order__mid__arrow" src="/images/icon_gary_arrowmore_20.png"></image>
+    </view>
+    <view class="order-date">
+     付款时间: 2018-08-06 12:00:00
+    </view>
+    <view class="order-line"></view>
+   </block>
+
+    <!-- 佣金 -->
+  <block wx:if="{{type==2}}">
+  
+    <view class="order-num">佣金订单: 1828888</view>
+    <view class="order__mid">
+      <view class="order__mid__plate-number" wx:if="{{type !== 2}}" >
+         <text >车牌号码: 沪A88888 </text>
+      </view>
+     <view style='flex:1' class="order-flex"></view>
+     <view class="order__mid__price">+200.00</view>
+     <image class="order__mid__arrow" src="/images/icon_gary_arrowmore_20.png"></image>
+    </view>
+    <view class="order-date">
+    收款时间: 2018-08-06 12:00:00
+    </view>
+    <view class="order-line"></view>
+  </block>
+
+    <!-- 提现 -->
+   <block wx:if="{{type==3}}">
+  
+
+    <view class="order-num" >账户提现</view>
+    <view class="order__mid">
+      <view class="order__mid__plate-number">提现账户: 工商银行 2399 **** **34</view>
+     <view style='flex:1' class="order-flex"></view>
+     <view class="order__mid__price">-200.00</view>
+     <image class="order__mid__arrow" src="/images/icon_gary_arrowmore_20.png"></image>
+    </view>
+    <view class="order-date">
+    提现时间: 2018-08-06 12:00:00
+    </view>
+    <view class="order-line"></view>
+
+   </block>
+    
+  </view>
+</template>

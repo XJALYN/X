@@ -1,0 +1,24 @@
+
+<import src="./wxCard/wxCard"/>
+<import src="./bankCard/bankCard" />
+
+<view>
+<view class="shadow-line"></view>
+<view class="tip" wx:if="{{list.length == 0}}">绑定微信让收入顺利入账吧</view>
+<view class="tip" wx:if="{{list.length > 2}}">长按拖动卡片至顶部，设置为默认收款方式</view>
+
+<movable-area style="height: {{list.length * 133}}px; width: 750rpx;">
+<block wx:for="{{list}}" wx:key="{{index}}">
+<!-- <template wx:if="{{item.type==1}}" is="wxCard" data="{{index,cardNumFirst:item.cardNumFirst,cardNumLast:item.cardNumLast,offsetY:item.offsetY,handleAnimated:handleAnimated}}"/> -->
+<template  is="bankCard" data="{{index,cardNumLast:item.cardNumLast,name:item.backName,offsetY:item.offsetY,handleAnimated:handleAnimated}}"/>
+
+</block>
+</movable-area>
+
+
+<view class="bind-wx-container" bindtap='bindAddDueWays'>
+  <image class="bind-wx__icon" src="/images/icon_add_gray.png">+</image>
+  <view class="bind-wx__title">添加收款方式</view>
+</view>
+
+</view>
