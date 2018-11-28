@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "日期段选择器",
+  "usingComponents":{
+   "x-dateList":"../../X/dateList/index"
+  }
+}

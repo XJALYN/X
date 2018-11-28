@@ -1,9 +1,0 @@
-{
-  "navigationBarTitleText": "提现",
-  "enablePullDownRefresh": false,
-    "disableScroll": true,
-  "usingComponents":{
-    "x-mulSegmentInput":"../mulSegmentInput/index"
-  }
- 
-}

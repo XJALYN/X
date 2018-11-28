@@ -2,6 +2,7 @@
   "navigationBarTitleText": "X组件",
   "usingComponents":{
     "x-grid":"/X/grid/index",
+    "x-noticebar":"/X/noticebar/index",
     "x-page-doc":"/X/pageDoc/index"
   }
 }

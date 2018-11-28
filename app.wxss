@@ -1,4 +1,5 @@
 @import 'style/weui.wxss';
+@import 'style/animated.wxss';
 
 page{
     background-color: white;

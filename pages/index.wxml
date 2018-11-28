@@ -1,11 +1,14 @@
 <!--pages/index.wxml-->
-<view>
+<view bindtouchmove='bindStart' bindtouchend='bindEnd'>
+
+<x-noticebar text="{{bar.text}}" leftIcon="{{bar.leftIcon}}" scrollable="{{bar.scrollable}}" mode="{{bar.mode}}"></x-noticebar>
 <x-page-doc title="{{doc.title}}" desc="{{doc.desc}}" showReward="{{false}}"></x-page-doc>
 <view class="menu">
+
   <navigator url='/pages/blog/blog'>
      <view class="menu__item">小程序精讲教程</view>
    </navigator>  
-   <navigator class="reward" app-id="wx18a2ac992306a5a4" target="miniProgram" path="pages/apps/largess/detail?id=aQOaqQPzE6U%3D">赞赏</navigator>
+   <view wx:if="{{showLeft}}" class="reward animated slideInRight" catchtap='bindPushGeiZan'>赞赏</view>
   <navigator url="/pages/plugInMarket/plugInMarket">
      <view class="menu__item">小程序插件市场</view>
   </navigator> 

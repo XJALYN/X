@@ -1,6 +1,0 @@
-<template name="menu">
-   <view class="menu">
-      <view class="{{menuIndex==0?'menu__item--active':'menu__item'}}" bindtap='bindMenuChange' data-index='0'>余额明细</view>
-      <view class="{{menuIndex==1?'menu__item--active':'menu__item'}}" bindtap='bindMenuChange' data-index='1'>待入账明细</view>
-   </view>
-</template>

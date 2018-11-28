@@ -1,4 +1,5 @@
 // pages/index.js
+const list = require("./event.js")
 Page({
 
   /**
@@ -9,51 +10,15 @@ Page({
       title:"X",
       desc:"X组件提供了丰富的小程序开发组件,能够帮助开发更快的开发小程序,下面是各个组件的演示"
     },
-   list:[
-     { name: "about", url: "/pages/about/about", icon:"/images/about.png"},
-     { name: "audio", url: "/pages/audio/audio", icon: "/images/audio.png"},
-     { name: "animate", url: "/pages/animate/animate", icon: "/images/animate.png" },
-     { name: "badge", url: "/pages/badge/badge", icon: "/images/badge.png" },
-     { name: "calendar", url: "/pages/calendar/calendar", icon: "/images/calendar.png"},
-     { name: "cell", url: "/pages/cell/cell", icon: "/images/cell.png"},
-     { name: "circleProgress", url: "/pages/circleProgress/circleProgress", icon: "/images/circle_progress.png" },
-     { name: "capsule", url: "/pages/capsule/capsule", icon: "/images/capsule.png" },
-     { name: "countdown", url: "/pages/countdown/countdown", icon: "/images/countdown.png"},
-     { name: "cropper", url: "/pages/cropper/cropper", icon: "/images/cropper.png" },
-     { name: "error", url: "/pages/error/error", icon: "/images/error.png" },
-     { name: "footer", url: "/pages/footer/footer", icon: "/images/footer.png"},
-     { name: "grid", url: "/pages/grid/grid", icon: "/images/grid.png"},
-     { name: "live-player", url: "/pages/livePlayer/livePlayer", icon: "/images/live-player.png" },
-     { name: "loadmore", url: "/pages/loadmore/loadmore", icon: "/images/loadmore.png"},
-     { name: "moments", url: "/pages/moments/moments", icon: "/images/moments.png"},
-     { name: "plane", url: "/pages/plane/plane", icon: "/images/plane.png" },
-     { name: "recorder", url: "/pages/recorder/recorder", icon: "/images/recorder.png" },
-     { name: "searchbar", url: "/pages/searchbar/searchbar", icon: "/images/searchbar.png"},
-     { name: "tabpage", url: "/pages/tabpage/tabpage", icon: "/images/tabpage.png" },
-     { name: "timeline", url: "/pages/timeline/timeline", icon: "/images/timeline.png"},
-     { name: "vote", url: "/pages/vote/vote", icon: "/images/vote.png"},
-     { name: "qrcode", url: "/pages/qrcode/qrcode", icon: "/images/qrcode.png"},
-     { name: "loading", url: "/pages/loading/loading", icon: "/images/loading.png"},
-     { name: "imageloader", url: "/pages/imageloader/imageloader", icon: "/images/about.png"},
-     { name: "icon",url:"/pages/icon/icon",icon:"/images/icon.png"},
-     { name: "parse", url: "/pages/parse/parse", icon: "/images/parse.png"},
-     { name: "noticebar", url: "/pages/noticebar/noticebar", icon: "/images/noticebar.png"},
-     { name: "steps", url: "/pages/steps/steps", icon: "/images/steps.png"},
-     { name: "switch", url: "/pages/switch/switch", icon: "/images/switch.png"},
-     { name: "uploader", url: "/pages/uploader/uploader", icon:"/images/uploader.png"},
-     { name: "popup", url: "/pages/popup/popup", icon: "/images/popup.png"},
-     { name: "multingKeyboard", url:"/pages/multingKeyboard/multingKeyboard",icon:"/images/keyboard.png"},
-     { name: "menuImage", url: "/pages/menuImage/menuImage", icon:"/images/menu.png"},
-     { name: "gradualNumber", url: "/pages/gradualNumber/gradualNumber", icon:"/images/gradual_number.png"},
-     { name: "weather", url:"/pages/weather/weather",icon:"/images/weather.png"},
-     { name: "radioGroup", url: "/pages/radioGroup/radioGroup", icon:"/images/radio.png"},
-     { name: "checkboxGroup", url:"/pages/checkboxGroup/checkboxGroup",icon:"/images/check.png"},
-     { name: "text", url: "/pages/text/text",icon:"/images/text.png"},
-     { name: "news", url: "/pages/news/news", icon:"/images/news.png"},
-     { name: "textare", url: "/pages/textare/textare",icon:"/images/textare.png"},
-     { name: "chart", url: "/pages/chart/chart", icon: "/images/chart.png"},
-     { name: "refresh", url: "/pages/refresh/refresh", icon:"/images/refresh.png"}
-   ]
+   list:list,
+    showLeft:true,
+    bar: {
+      text: '加群[783921168]获取源码 <-------- 加群[783921168]获取源码 <--------   加群[783921168]获取源码   <-------- 重要事情说三遍!',
+      leftIcon: 'https://img.yzcdn.cn/public_files/2017/8/10/6af5b7168eed548100d9041f07b7c616.png',
+      mode: '',//closeable
+      scrollable: true,
+      speed: 10
+    }
    
   },
 
@@ -110,7 +75,7 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
+    
   },
   bindChange(e){
     console.log(e)
@@ -126,6 +91,29 @@ Page({
           content: res.result,
         })
       }
+    })
+  },
+  bindPushGeiZan(){
+    wx.navigateToMiniProgram({
+      appId: 'wx18a2ac992306a5a4',
+      path: 'pages/apps/largess/detail?id=aQOaqQPzE6U%3D',
+      extraData: {
+        foo: 'bar'
+      },
+      envVersion: 'release',
+      success(res) {
+        // 打开成功
+      }
+    })
+  },
+  bindStart(e){
+   this.setData({
+     showLeft:false
+   })
+  },
+  bindEnd(e){
+    this.setData({
+      showLeft: true
     })
   }
 })

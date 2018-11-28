@@ -11,15 +11,16 @@
 
 }
 .reward{
+  position: fixed;
+  right: 10px;
+  bottom: 200px;
   width: 60px;
   height: 60px;
   border-radius: 30px;
-  /* background-color: red; */
-  background: linear-gradient(top,rgb(222,165,0),rgb(233,237,0));
-  background: -moz-linear-gradient(top,rgb(222,165,0),rgb(233,237,0));
-  background: -webkit-linear-gradient(top,rgb(222,165,0),rgb(233,237,0));
-  color: red;
+  background-color: rgb(50,50,50);
+  color: white;
   line-height: 60px;
   text-align: center;
   box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  z-index: 100;
 }

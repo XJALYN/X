@@ -1,0 +1,13 @@
+<!--pages/dateList/dateList.wxml-->
+<view>
+<view class="header" bindtap='bindShow'>选择日期({{beginDate.date}}-{{endDate.date}})</view>
+<x-dateList 
+ bindselecteddate="bindSelectedDate" 
+ beginDate="{{beginDate}}" 
+ endDate="{{endDate}}" 
+ show="{{show}}"
+ bindreset="bindResetDate"
+ bindconfirm="bindConfirmDate"
+>
+</x-dateList>
+</view>

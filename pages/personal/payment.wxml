@@ -1,0 +1,17 @@
+
+<import src="./wxCard/wxCard"/>
+<import src="./bankCard/bankCard" />
+
+<view>
+<view class="shadow-line"></view>
+<view class="tip" wx:if="{{list.length > 2}}">拖动卡片至顶部，设置为默认收款方式</view>
+
+
+<movable-area style="height: {{list.length * 133}}px; width: 750rpx;">
+    <block wx:for="{{list}}" wx:key="{{index}}">
+     <template  is="bankCard" data="{{index,number:item.num,name:item.name,offsetY:item.offsetY,handleAnimated:handleAnimated}}"/>
+    </block>
+</movable-area>
+
+
+</view>

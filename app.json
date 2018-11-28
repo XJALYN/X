@@ -1,21 +1,10 @@
 {
-  "pages": [
-    "hn/wallet/payPasswordVerificationCode/payPasswordVerificationCode",
-    "hn/wallet/payPasswordNew/payPasswordNew",
-    "hn/wallet/payPasswordSet/payPasswordSet",
-    "hn/wallet/payPasswordUpdate/payPasswordUpdate",
-    "hn/wallet/payPasswordConfirm/payPasswordConfirm",
-
-    "hn/wallet/withdraw/withdraw",
-    "hn/wallet/balance/balance",
-    "hn/wallet/myCowCoin/myCowCoin",
-    "hn/wallet/myWallet/myWallet",
-
+  "pages":[
     "pages/index",
+    "pages/personal/payment",
+    "pages/dateList/dateList",
     "pages/test/test",
-   
     "pages/refresh/refresh",
-    
     "pages/imageFillText/imageFillText",
     "pages/chart/chart",
     "pages/web/web",
@@ -81,5 +70,8 @@
     "uploadFile": 10000,
     "downloadFile": 10000
   },
-  "debug": true
+  "debug": true,
+  "navigateToMiniProgramAppIdList": [
+   "wx18a2ac992306a5a4"
+  ]
 }

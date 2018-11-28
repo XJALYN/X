@@ -1,0 +1,9 @@
+/* pages/dateList/dateList.wxss */
+.header{
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  width: 100vw;
+  color: rgb(50,50,50);
+  text-decoration: underline;
+}
